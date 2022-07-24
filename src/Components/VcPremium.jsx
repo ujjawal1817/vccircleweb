@@ -20,7 +20,7 @@ export default function VcPremium(props) {
           </div>
         </div>
         
-        <div className="cara-container">
+        <div className="cara-container vc-pre-shadow">
 
         <Swiper
             // install Swiper modules

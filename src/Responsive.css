@@ -264,8 +264,13 @@
     height: auto;
   }
   .side-ad {
-    width: 57% 
-   }
+    width: 57%;    
+  }
+  .sidead-para {
+    background:none;
+}
+  
+  
   .line-bottom {
     display: none;
   }
@@ -407,7 +412,7 @@ font-size: 14px;
     padding: 0px 0px;
   }
   .ms-img-res-div {
-    width: 100%;
+    width: auto;
   }
   .ms-img-res {
     width: 100%;
@@ -611,7 +616,16 @@ font-size: 14px;
 .side-res-ad {
   background: none;
 }
+
 }
+
+
+@media (min-width:320px) and (max-width:1200px){
+  .cara-container::before{
+    display: none;
+   }
+}
+
 @media (min-width:600px) and (max-width:768px){
   side-ad {
     display: none;

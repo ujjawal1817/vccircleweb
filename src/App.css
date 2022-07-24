@@ -414,10 +414,10 @@ a {
   font-size: 1.2rem;
   color: #222222;
   text-align: center;
+  background-color: #f0f0f0;
 }
 .editor-section-three {
-  /* width: inherit; */
-  background-color: #f0f0f0;
+  width: inherit;
   /* height: 27rem; */
   margin-left: 2rem;
   text-align: center;
@@ -476,7 +476,27 @@ a {
   height: 31rem;
   display: flex;
   margin-top: 2rem;
+  
 }
+.cara-container::before{
+  content: "";
+  background: transparent linear-gradient(90deg, #FFFFFF41 0%, #FFFFFF 100%);
+  position: absolute;
+  z-index: 22;
+  right: 0;
+  width: 400px;
+  height: 200px;
+}
+.vc-pre-shadow::before{
+  content: "";
+  background: transparent linear-gradient( to left, #000000 , #00000000 ) !important;
+  position: absolute;
+  z-index: 22;
+  right: 2%;
+  width: 331px;
+  height: 301px;
+}
+
 .carousel-card {
   display: flex;
   margin-top: 2rem;
@@ -487,6 +507,7 @@ a {
   height: auto;
   border: 1px solid #ededed;
   margin: 0rem 2rem;
+  border-radius: 10px;
 }
 .cara-img {
   width: 100%;
@@ -556,6 +577,12 @@ height: 30rem; */
   background-color: #ffffff;
   border-radius: 1.5rem;
 }
+/* .vc-cardone::before{
+  background: linear-gradient(to right, #14ABF4 5%,rgba(255,255,255,0) 100%);
+} */
+
+
+
 .pre-img {
 }
 .vc-pre-logo{
@@ -602,7 +629,7 @@ height: 30rem; */
 }
 .up-cardone {
   display: flex;
-  width: 32rem;
+  width: 33rem;       
   height: 11rem;
   border: 1px solid #0000001a;
   border-radius: 0.7rem;
