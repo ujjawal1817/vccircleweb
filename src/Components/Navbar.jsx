@@ -157,8 +157,8 @@ export default function Navbar() {
             </ul>
           </div>
         </div>
-      </div>
       <hr className="none-border" />
+      </div>
     </>
   );
 }
