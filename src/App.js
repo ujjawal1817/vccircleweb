@@ -107,7 +107,7 @@ function App() {
         pad={{ padding: "1rem 21rem" }}
         width="100%"
         />
-        <Carousel cheading="Mergers & Acquisitions" caraDataOne={maImg}/>
+        <Carousel maheading="Mergers & Acquisitions" resheading="M&A" caraDataOne={maImg}/>
         <Carousel cheading="Financials" caraDataOne={finImg}/>  
          <MoreStories/>
       <Footer/>      

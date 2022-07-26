@@ -8,7 +8,7 @@ export default function Carousel(props) {
   return (
     <div className="container">
       <div className="carouselheader">
-        <p className="carousel-heading-one">{props.cheading}</p>
+        <p className="carousel-heading-one ">{props.cheading} <span className="desk-mheading">{props.maheading}</span><span className="res-c-heading">{props.resheading}</span></p>
         <p className="carousel-heading-two">
           View More <FaAngleRight className="angle-right" />{" "}
         </p>

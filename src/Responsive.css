@@ -374,6 +374,7 @@
 
   .tv-section {
     flex-wrap: wrap;
+    border-style: none;
   }
   .tv-heading{
 font-size: 14px;
@@ -437,6 +438,13 @@ font-size: 14px;
   }
   .carousel-heading-one {
     font-size: 13px;
+    
+  }
+  .desk-mheading{
+    display: none;
+  }
+  .res-c-heading{
+    display: block;
   }
   
   .carousel-heading-two {

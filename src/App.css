@@ -478,6 +478,12 @@ a {
   margin-top: 2rem;
   
 }
+.res-c-heading{
+  display: none;
+}
+.desk-mheading{
+  display: block;
+}
 .cara-container::before{
   content: "";
   background: transparent linear-gradient(90deg, #FFFFFF41 0%, #FFFFFF 100%);
@@ -506,25 +512,26 @@ a {
   width: 80%;
   height: auto;
   border: 1px solid #ededed;
-  margin: 0rem 2rem;
   border-radius: 10px;
+  padding: 7px 7px;
 }
 .cara-img {
   width: 100%;
-  padding: 1rem 1rem;
+  
 }
 
 .cara-desc {
   font-size: 1.4rem;
   color: #222222;
-  width: 100%;
   font-weight: 600;
-  padding: 1rem 1rem;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    max-width: 250px;
-    overflow: hidden;
+  width: 100%;  
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 3px 6px;
+   
 }
 .cara-author {
   font-size: 1.2rem;
