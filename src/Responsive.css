@@ -43,7 +43,8 @@
 
   .res-logo-img {
     width: 20vw;
-    height: 32px;
+    height: 33px;
+    margin: 0px 9px;
   }
   .res-navbar {
     margin-top: 20px;
@@ -62,6 +63,7 @@
     display: block;
     font-size: 5rem;
     display: flex;
+    margin: 0px 14px;
   }
 
   .respons_nav {
@@ -593,7 +595,7 @@ font-size: 14px;
 
   .res-editor-section-sidead img {
     width: 94%;
-    height: 21vh;
+    /* height: 21vh; */
   }
 
   .res-sidead-none {
@@ -859,4 +861,11 @@ font-size: 14px;
 .main-container {
   width: 1366px;
 }
+}
+
+@media (min-width:320px) and (max-width:400px){
+  .cara-container{
+    width: 268px ;
+    margin: 15px auto;
+  }
 }

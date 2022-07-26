@@ -33,15 +33,6 @@ export default function Navbar() {
                 className="logo-img res-logo-img"
               />
             </div>
-            {/* <a href="#" onClick={show}>
-                <HiMenu />
-              </a>
-            </div>
-            <img
-              src="./Images/vccircle.png"
-              alt="logo-vccircle"
-              className="logo-img res-logo-img"
-            /> */}
             <ul className="res-nav-subscribe-ul">
               <li className="sub-nav-li sub-nav-li-hide">
                 <span>
