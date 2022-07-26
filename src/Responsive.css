@@ -191,7 +191,7 @@
       font-size: 9px;
        width: 100%; 
        display: -webkit-box;
-       -webkit-line-clamp: 2;
+       -webkit-line-clamp: 3;
        -webkit-box-orient: vertical;
        overflow: hidden;
        text-overflow: ellipsis;
@@ -371,9 +371,10 @@
   width: 100%;
 }
 .premium-author {
-  font-size: 9px;
-  padding: 2px 5px;
+  font-size: 8.2px;
+  padding: 7px 5px;
 }
+
 
   .tv-section {
     flex-wrap: wrap;
@@ -406,6 +407,7 @@ font-size: 14px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
+    padding: 8px 0px
   }
   .res-morestoriesmain {
     display: none;
@@ -454,8 +456,8 @@ font-size: 14px;
     font-size: 11px;
 }
 .car-card-one {
-  width: auto;
-  height: auto;
+  width: 165px;
+  
 }
 .cara-img {
   width: 100%;
@@ -466,7 +468,7 @@ font-size: 14px;
     display: none;
   }
   .swiper-slide {
-    width:267px !important;
+    width:165px !important;
   }
   
 
@@ -475,7 +477,7 @@ font-size: 14px;
     padding: 0px 8px;
   }
   .premium-text-carousel {
-    right: 13%;
+    right: 2%
   }
   .res-upcomingevents {
     display: block;
@@ -769,7 +771,7 @@ font-size: 14px;
     padding: 2px 8px;
 }
 .cara-author {
-  font-size: 10px;
+  font-size: 7px;
 }
 .cara-container {
   width: 100%;
@@ -864,8 +866,5 @@ font-size: 14px;
 }
 
 @media (min-width:320px) and (max-width:400px){
-  .cara-container{
-    width: 268px ;
-    margin: 15px auto;
-  }
+ 
 }

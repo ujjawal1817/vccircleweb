@@ -473,7 +473,6 @@ a {
 }
 .cara-container {
   width: 129rem;
-  height: 31rem;
   display: flex;
   margin-top: 2rem;
   
@@ -534,7 +533,7 @@ a {
    
 }
 .cara-author {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #798692;
   font-weight: 400;
   padding: 1rem 1rem;
@@ -545,6 +544,7 @@ a {
   width: auto;
   height: auto;
   margin-top: 3rem;
+  padding: 20px 0px
 }
 .vcpre-header {
   display: flex;
@@ -578,7 +578,7 @@ height: 30rem; */
   border-radius: 1.5rem;
 }
 .vc-cardone {
-  border: 0.1rem solid #ffffff;
+  /* border: 0.1rem solid #ffffff; */
   width: 26rem;
   height: 30rem;
   background-color: #ffffff;
