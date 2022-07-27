@@ -9,34 +9,30 @@ export default function VcPremium(props) {
       <div className="container">
         <div className="vcpre-header">
           <div className="vc-pre-logo">
-          <p className="vcpre-headingone">
-            VCCircle Premium 
-          </p>
-          <img src="./Images/crown.png" className="res-crown crown" alt=""/>
+            <p className="vcpre-headingone">VCCircle Premium</p>
+            <img src="./Images/crown.png" className="res-crown crown" alt="" />
           </div>
           <div className="deskSub">
-            
-          <button className="vcpre-btn ">Subscribe</button>
+            <button className="vcpre-btn ">Subscribe</button>
           </div>
         </div>
-        
-        <div className="cara-container vc-pre-shadow">
 
-        <Swiper
+        <div className="cara-container vc-pre-shadow">
+          <Swiper
             // install Swiper modules
             breakpoints={{
-              340:{
-                slidesPerView:1,
-                spaceBetween:20,
+              340: {
+                slidesPerView: 1,
+                spaceBetween: 20,
               },
-              768:{
-                slidesPerView:2,
-                spaceBetween:20,
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
               },
-              1024:{
-                slidesPerView:4,
-                spaceBetween:50,
-              }
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+              },
             }}
             modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
             spaceBetween={10}
@@ -47,39 +43,32 @@ export default function VcPremium(props) {
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log("slide change")}
           >
-
-
-
-        <div className="vc-card">
-          
-            {props.preImg.map((item) => {
-            
-              
+            <div className="vc-card">
+              {props.preImg.map((item) => {
                 return (
                   <SwiperSlide>
-                        <div className="vc-cardone ">
-                          <div className="premium-container">
-
-                        <span className="premium-vccpre">PREMIUM</span>
-                          <img src={item.src} alt="" className="premium-img" />
-                          </div>
-                      
-                      <p className="premium-title">{item.heading}</p>
-                      <p className="premium-para">{item.para}</p>
-                      <p className="premium-author">{item.author}</p>
+                    <div className="">
+                      <div className="vc-pre-img-div">
+                       
+                        <img src={item.src} alt="" className="g" />
+                        <span className="vc-pre-span">PREMIUM</span>
+                      </div>
+                      <div className="vc-details">
+                        <p className="premium-title">{item.heading}</p>
+                        <p className="premium-para">{item.para}</p>
+                        <p className="premium-author">{item.author}</p>
+                      </div>
                     </div>
                   </SwiperSlide>
                 );
               })}
             </div>
           </Swiper>
-          
         </div>
 
         <div className="res-btnSub">
-        <button className="vcpre-btn ">Subscribe</button>
+          <button className="vcpre-btn ">Subscribe</button>
         </div>
-          
       </div>
     </div>
   );

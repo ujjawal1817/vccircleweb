@@ -15,7 +15,7 @@ const caraImg=[
         author:"30 September . Madhurima Nandy +3 "
     },
     {
-        src:"./Images/cara-img3.png",
+        src:"./Images/cara-img-res.png",
         para:"Fresh LP commitment to Indian PE-VC funds sinks after hitting record high",
         author:"30 September . Madhurima Nandy "
     },
@@ -35,7 +35,7 @@ const caraImg=[
         author:"30 September . Madhurima Nandy +3 "
     },
     {
-        src:"./Images/cara-img3.png",
+        src:"./Images/cara-img-res.png",
         para:"Fresh LP commitment to Indian PE-VC funds sinks after hitting record high",
         author:"30 September . Madhurima Nandy "
     },
@@ -45,20 +45,20 @@ const preImg=[
     {
         src:"./Images/premiumone.png",
         heading:"TMT",
-        para:"Yatra Angel Network’s debut Rs 90 cr angel fund gets bulk of commitments",
+        para:"Iron Pillar-backed CoreStack’s game plan to hit $1 bn in annual recurring revenue",
         author:"30 September . Madhurima Nandy +1"
     },
     {
         src:"./Images/premiumtwo.png",
         heading:"INFRASTRUCTURE",
-        para:"Foundation PE buys 100% LP interest in Prime Venture Partners’ first fund",
+        para:"Actis in talks to acquire Welspun group’s roads for up to Rs 10,000 cr",
         author:"30 September . Madhurima Nandy "
     },
     {
         
         src:"./Images/premiumthree.png",
         heading:"Consumer",
-        para:"Kalaari Capital’s partial exits from Dream11 help return $206 mn to LPs",
+        para:"Sixth Sense Ventures invests in VC-backed fashion jewellery startup",
         author:"30 September . Madhurima Nandy +3 "
     },
     {

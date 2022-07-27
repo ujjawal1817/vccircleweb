@@ -18,6 +18,7 @@ export default function Navbar() {
   };
   return (
     <>
+    <div className="nav-shadow">
       <div className="container">
         <div className="nav-container">
           <div className="navbar res-navbar">
@@ -148,7 +149,8 @@ export default function Navbar() {
             </ul>
           </div>
         </div>
-      <hr className="none-border" />
+      
+      </div>
       </div>
     </>
   );

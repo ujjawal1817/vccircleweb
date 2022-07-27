@@ -18,7 +18,7 @@ import UpcomingEventsResponsive from "./Components/UpcomingEventsResponsive";
 function App() {
   return (
     <>
-      <Navbar /> 
+       <Navbar /> 
      <Advertisement
         src="./Images/advertisement.png"
         pad={{ padding: "1rem 10rem" }}
@@ -47,9 +47,9 @@ function App() {
         editorDesc4="Delivery race among Indian grocery startups brings road safety risks" 
        
        />  
-       <SocialComp/>  
+       <SocialComp/>   
        <Carousel cheading="Limited Partners"caraDataOne={caraImg}/>  
-       <div className="editor-section-three editor-width re-editor-sidead res-editor-section-sidead">
+        <div className="editor-section-three editor-width re-editor-sidead res-editor-section-sidead">
             <p className='sidead-para'>Advertisement</p>
             <img src="./Images/sidead.png" alt="" className="side-ad res-sidead"/>
         </div>
