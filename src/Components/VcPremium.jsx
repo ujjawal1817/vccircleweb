@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from "swiper";
 import "swiper/css/bundle";
 
+
 export default function VcPremium(props) {
   return (
     <div className="main-container">
@@ -27,7 +28,7 @@ export default function VcPremium(props) {
               },
               768: {
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 50,
               },
               1024: {
                 slidesPerView: 4,

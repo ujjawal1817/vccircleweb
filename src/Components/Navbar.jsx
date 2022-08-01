@@ -51,7 +51,7 @@ export default function Navbar() {
               <img
                 src="./Images/vccircle.png"
                 alt="logo-vccircle"
-                className="logo-img res-logo-img"
+                className="nav-logo-vccircle"
               />
             </div>
 

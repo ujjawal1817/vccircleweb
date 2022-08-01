@@ -24,6 +24,7 @@ export default function Carousel(props) {
             340: {
               slidesPerView: 1,
               spaceBetween: 20,
+              loop:true,
             },
             768: {
               slidesPerView: 2,
@@ -38,7 +39,8 @@ export default function Carousel(props) {
           modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
           spaceBetween={10}
           slidesPerView={4}
-          navigation
+          navigation={true}
+          loop={true}
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
           onSwiper={(swiper) => console.log(swiper)}
