@@ -15,10 +15,11 @@ import MoreStories from "./Components/MoreStories";
 import Footer from "./Components/Footer";
 import UpcomingEventsResponsive from "./Components/UpcomingEventsResponsive";
 
+
 function App() {
   return (
     <>
-       <Navbar /> 
+      <Navbar /> 
      <Advertisement
         src="./Images/advertisement.png"
         pad={{ padding: "1rem 10rem" }}
@@ -110,8 +111,7 @@ function App() {
         <Carousel maheading="Mergers & Acquisitions" resheading="M&A" caraDataOne={maImg}/>
         <Carousel cheading="Financials" caraDataOne={finImg}/>  
          <MoreStories/>
-      <Footer/>      
-       
+      <Footer/>       
     </>
   );
 }
