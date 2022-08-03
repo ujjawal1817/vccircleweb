@@ -290,8 +290,9 @@ a {
   margin-top: 3.3rem;
 }
 .section-sub-img {
-  width: 67rem;
+  width: 63rem;
   margin-left: 3rem;
+  border-radius: 20px;
 }
 .section-detail-button {
   width: 16rem;
@@ -397,7 +398,22 @@ a {
   margin: 0.5rem 0rem;
 }
 .res-smallpic {
-  width: 118px;
+  width: 280px
+}
+.api-img{
+  width: 280px;
+  border-radius: 10px;
+}
+.api-editor-img{
+    width: 373px;
+    border-radius: 10px;
+}
+.api-editor-subimg{
+  width: 166px;
+    border-radius: 10px;
+}
+.api-slug-title{
+  color: black;
 }
 .side-ad {
   width: 40rem;

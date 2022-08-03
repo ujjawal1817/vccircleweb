@@ -6,7 +6,16 @@ import SectionTwo from "./Components/SectionTwo";
 import EditorSection from "./Components/EditorSection";
 import SocialComp from "./Components/SocialComp";
 import Carousel from "./Components/Carousel";
-import {caraImg,preImg,upImage,foundersData,tmtImg,techImg,maImg,finImg} from "./Image Store/CaraouselImages";
+import {
+  caraImg,
+  preImg,
+  upImage,
+  foundersData,
+  tmtImg,
+  techImg,
+  maImg,
+  finImg,
+} from "./Image Store/CaraouselImages";
 import VcPremium from "./Components/VcPremium";
 import UpcomingEvents from "./Components/UpcomingEvents";
 import VccTv from "./Components/VccTv";
@@ -14,18 +23,53 @@ import Signup from "./Components/Signup";
 import MoreStories from "./Components/MoreStories";
 import Footer from "./Components/Footer";
 import UpcomingEventsResponsive from "./Components/UpcomingEventsResponsive";
-
+import SectionOne from "./Components/SectionOne";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 function App() {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios
+      .get("https://run.mocky.io/v3/25b66855-89a3-45a5-8db6-85fc85041185")
+      .then((response) => {
+        console.log(response.data.section_list);
+        setData(response.data.section_list);
+      });
+  }, []);
   return (
     <>
-      <Navbar /> 
-     <Advertisement
+      <Navbar />
+      <Advertisement
         src="./Images/advertisement.png"
         pad={{ padding: "1rem 10rem" }}
         width="100%"
-      />  
-        <SectionTwo /> 
+      />
+      {data.map((item, index) => {
+        if (index === 0) {
+          return (
+            <>
+              <SectionOne item={item} />
+              <Advertisement
+                src="./Images/advertisement.png"
+                pad={{ padding: "1rem 10rem" }}
+                width="100%"
+              />
+            </>
+          );
+        }
+        if (index === 1) {
+          return (
+            <>
+              <EditorSection item={item}/>
+              <Signup/>
+            </>
+          );
+        }
+
+      })}
+
+      {/* <SectionTwo /> 
       <Advertisement
         src="./Images/advertisement2.png"
         pad={{ padding: "1rem 21rem" }}
@@ -111,7 +155,7 @@ function App() {
         <Carousel maheading="Mergers & Acquisitions" resheading="M&A" caraDataOne={maImg}/>
         <Carousel cheading="Financials" caraDataOne={finImg}/>  
          <MoreStories/>
-      <Footer/>       
+      <Footer/>        */}
     </>
   );
 }
