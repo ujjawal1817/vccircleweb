@@ -415,6 +415,9 @@ a {
 .api-slug-title{
   color: black;
 }
+.border-api{
+  display: none;
+}
 .side-ad {
   width: 40rem;
 }

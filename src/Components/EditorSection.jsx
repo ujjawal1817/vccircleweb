@@ -131,7 +131,7 @@ export default function EditorSection(props) {
           </div>
         </div>
       </div>
-      <hr className={props.display} />
+      <hr className="border-api" />
     </div>
   );
 }

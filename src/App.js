@@ -61,8 +61,9 @@ function App() {
         if (index === 1) {
           return (
             <>
-              <EditorSection item={item}/>
+              <EditorSection item={item} display={{display:"none"}}/>
               <Signup/>
+              <SocialComp/>
             </>
           );
         }
