@@ -8,7 +8,7 @@ import Card from "./Card";
 
 export default function Carousel(props) {
   return (
-    <div className="container" key={props.item.stories_list.feid}>
+    <div className="container" key={props.item.stories_list[0].feid}>
       <div className="carouselheader">
         <p className="carousel-heading-one ">
           {props.item.section_name}{" "}

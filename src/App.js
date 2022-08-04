@@ -119,11 +119,47 @@ function App() {
         }
         if(item.section_slug==="vcc-tv"){
           return(
+            <>
             <VccTv item={item}/>
+            <Advertisement
+                src="./Images/advertisement.png"
+                pad={{ padding: "1rem 10rem" }}
+                width="100%"
+              />
+            </>
+
           )
         }
-      })}
+        if(item.section_slug==="tmt"){
+          return(
+            <Carousel item={item}/>
+          )
+        }
+        if(item.section_slug==="financials"){
+          return(
+            <>
+            <Carousel item={item}/>
+            <Advertisement
+                src="./Images/advertisement.png"
+                pad={{ padding: "1rem 10rem" }}
+                width="100%"
+              />
+            </>
+          )
+        }
 
+        if(item.section_slug==="more-stories"){
+          return(
+          <>
+          <MoreStories item={item}/>
+          </>
+          )
+        }
+
+
+
+      })}
+      
       {/* <SectionTwo /> 
       <Advertisement
         src="./Images/advertisement2.png"

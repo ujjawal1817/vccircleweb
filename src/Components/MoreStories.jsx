@@ -1,13 +1,36 @@
 import React from "react";
 import Advertisement from "./Advertisement";
+import Card from "./Card";
 
-export default function MoreStories() {
+export default function MoreStories(props) {
   return (
     <>
       <div className="container">
         <h3 className="ms-main-heading">More Stories</h3>
         <div className="morestories-main">
-          <div>
+              {props.item.stories_list.map((item,index)=>{
+                if(index===0)return null;
+
+                return(
+                <Card
+                src={item.file_url}
+                heading={item.industry_details[0].name} 
+                title={item.title}
+                author={item.author_details[0].name}
+                publish={item.publish}
+                width="164px"
+                
+                />
+
+                )
+
+              })}
+
+
+
+
+
+          {/* <div>
             <div className="ms-sectionone">
               <div className="ms-img-res-div">
                 <img src="./Images/money.png" alt="money-img" className="ms-img-res" />
@@ -53,7 +76,7 @@ export default function MoreStories() {
                 </p>
                 <p className="ms-sub-para">30 September . Madhurima Nandy</p>
               </div>
-            </div>
+            </div> 
           </div>
 
           <div>
@@ -77,7 +100,7 @@ export default function MoreStories() {
               </div>
             </div>
 
-            <div className="ms-sectiontwo">
+             <div className="ms-sectiontwo">
               <div className="ms-img-res-div">
                 <img src="./Images/kotak.png" alt="money-img" className="ms-img-res"/>
               </div>
@@ -110,11 +133,11 @@ export default function MoreStories() {
                   30 September . Madhurima Nandy
                 </p>
               </div>
-            </div>
-          </div>
+            </div> 
+          </div> */}
         </div>
       </div>
-      <Advertisement
+      {/* <Advertisement
         src="./Images/advertisement2.png"
         pad={{ padding: "1rem 21rem" }}
         width="100%"
@@ -225,7 +248,7 @@ export default function MoreStories() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
 
 
