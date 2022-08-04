@@ -1,7 +1,7 @@
 import React from "react";
 import { FaAngleRight, FaPlay } from "react-icons/fa";
 
-export default function VccTv() {
+export default function VccTv(props) {
   return (
     <div className="container">
       <div className="tv-bg">
@@ -24,20 +24,14 @@ export default function VccTv() {
             ></iframe>
           </div>
           <div className="tv-details">
-            <p className="tv-heading">HEALTHCARE</p>
+            <p className="tv-heading">{props.item.stories_list[0].industry_details[0].name}</p>
             <p className="tv-title">
-              How can we harness data for healthcare and safegaurd ourselves
-              from cyber threats?
+            {props.item.stories_list[0].title}
             </p>
             <p className="tv-para">
-              The global healthcare data is expected to grow at a CAGR of 36% by
-              2025. To make healthcare more equitable, affordable and
-              accessible, there is a need to find ways to unite and generate
-              actionable insights from data. How collaborations and strategic
-              partnerships can harness the data to tackle the issues faced by
-              the sector?
+            {props.item.stories_list[0].summary}
             </p>
-            <p className="tv-author">30 September . Madhurima Nandy</p>
+            <p className="tv-author"><span>{props.item.stories_list[0].publish}</span>{props.item.stories_list[0].author_details[0].name}</p>
           </div>
         </div>
       </div>

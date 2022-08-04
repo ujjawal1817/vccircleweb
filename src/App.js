@@ -46,7 +46,7 @@ function App() {
         width="100%"
       />
       {data.map((item, index) => {
-        if (index === 0) {
+        if (item.section_slug === "top-stories") {
           return (
             <>
               <SectionOne item={item} />
@@ -58,16 +58,70 @@ function App() {
             </>
           );
         }
-        if (index === 1) {
+        if (item.section_slug === "editors-pick") {
           return (
             <>
-              <EditorSection item={item} display={{display:"none"}}/>
-              <Signup/>
-              <SocialComp/>
+              <EditorSection item={item} />
+              <Signup />
+              <SocialComp />
             </>
           );
         }
 
+        if (item.section_slug === "limited-partner") {
+          return (
+            <>
+              <Carousel item={item} />
+              <Advertisement
+                src="./Images/advertisement.png"
+                pad={{ padding: "1rem 10rem" }}
+                width="100%"
+              />
+            </>
+          );
+        }
+
+        if(item.section_slug==="vccircle-premium"){
+          return(
+            <>
+           <VcPremium item={item}/>
+           
+            
+            
+            </>
+          )
+        }
+
+        if(item.section_slug==="upcoming-events"){
+          return(
+            <>
+            <UpcomingEvents/>
+            
+            </>
+          )
+        }
+        if(item.section_slug==="founders"){
+          return(
+            <>
+            <Carousel item={item} />
+            <Advertisement
+                src="./Images/advertisement.png"
+                pad={{ padding: "1rem 10rem" }}
+                width="100%"
+              />
+            </>
+          )
+        }
+        if(item.section_slug==="most-popular"){
+          return(
+            <EditorSection item={item} />
+          )
+        }
+        if(item.section_slug==="vcc-tv"){
+          return(
+            <VccTv item={item}/>
+          )
+        }
       })}
 
       {/* <SectionTwo /> 

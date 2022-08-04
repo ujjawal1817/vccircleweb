@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaAngleRight, FaPlay } from "react-icons/fa";
 import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from "swiper";
+import { upImage } from "../Image Store/CaraouselImages";
 import "swiper/css/bundle";
 
 export default function UpcomingEvents(props) {
@@ -31,7 +32,7 @@ export default function UpcomingEvents(props) {
 
         <div className="up-card">
           
-            {props.upImage.map((item) => {
+            {upImage.map((item) => {
             
               
                 return (

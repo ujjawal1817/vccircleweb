@@ -2,14 +2,16 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaAngleRight } from "react-icons/fa";
 import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from "swiper";
+
 import "swiper/css/bundle";
+import Card from "./Card";
 
 export default function Carousel(props) {
   return (
-    <div className="container">
+    <div className="container" key={props.item.stories_list.feid}>
       <div className="carouselheader">
         <p className="carousel-heading-one ">
-          {props.cheading}{" "}
+          {props.item.section_name}{" "}
           <span className="desk-mheading">{props.maheading}</span>
           <span className="res-c-heading">{props.resheading}</span>
         </p>
@@ -24,7 +26,6 @@ export default function Carousel(props) {
             340: {
               slidesPerView: 1,
               spaceBetween: 20,
-             
             },
             768: {
               slidesPerView: 2,
@@ -46,25 +47,69 @@ export default function Carousel(props) {
           onSlideChange={() => console.log("Card movinf")}
         >
           <div className="carousel-card">
-            {props.caraDataOne.map((item) => {
-              return (
-                <SwiperSlide>
-                  <div className="main-card-box ">
+            
+              <div className="main-card-box ">
+                {props.item.stories_list.map((item, index) => {
+                  if (index === 0) return null;
+                  return (
+                    <SwiperSlide>
+                    <Card
+                      src={item.file_url}
+                      width="100%"
+                      title={item.title}
+                      author={item.author_details[0].name}
+                      publish={item.publish}
+                      flxCls="cara-card"
+                    />
+                    </SwiperSlide>
+                  );
+                })}
+              </div>
+
+              {/* <div className="main-card-box ">
                     <div className="card-images">
-                      <img src={item.src} className="" alt="" />
+                    <img src={props.item.stories_list[0].file_url} className="" alt="" />
 
                       <span className="card-span-pre">PREMIUM</span>
                     </div>
                     <div className="card-details">
                       
                     
-                    <p className="card-para">{item.para}</p>
-                    <p className="card-author">{item.author}</p>
+                    <p className="card-para">{props.item.stories_list[1].title}</p>
+                    <p className="card-author">{props.item.stories_list[1].author_details[0].name}</p>
                     </div>
                   </div>
-                </SwiperSlide>
-              );
-            })}
+
+
+                  <div className="main-card-box ">
+                    <div className="card-images">
+                    <img src={props.item.stories_list[0].file_url} className="" alt="" />
+
+                      <span className="card-span-pre">PREMIUM</span>
+                    </div>
+                    <div className="card-details">
+                      
+                    
+                    <p className="card-para">{props.item.stories_list[2].title}</p>
+                    <p className="card-author">{props.item.stories_list[2].author_details[0].name}</p>
+                    </div>
+                  </div>
+
+
+                  <div className="main-card-box ">
+                    <div className="card-images">
+                    <img src={props.item.stories_list[0].file_url} className="" alt="" /  >
+
+                      <span className="card-span-pre">PREMIUM</span>
+                    </div>
+                    <div className="card-details">
+                      
+                    
+                    <p className="card-para">{props.item.stories_list[3].title}</p>
+                    <p className="card-author">{props.item.stories_list[3].author_details[0].name}</p>
+                    </div>
+                  </div> */}
+            
           </div>
         </Swiper>
       </div>
