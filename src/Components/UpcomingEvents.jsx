@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FaAngleRight, FaPlay } from "react-icons/fa";
+import { FaAngleRight} from "react-icons/fa";
 import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from "swiper";
 import { upImage } from "../Image Store/CaraouselImages";
 import "swiper/css/bundle";

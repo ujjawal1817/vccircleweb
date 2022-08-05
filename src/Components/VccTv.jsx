@@ -1,5 +1,5 @@
 import React from "react";
-import { FaAngleRight, FaPlay } from "react-icons/fa";
+import { FaAngleRight} from "react-icons/fa";
 
 export default function VccTv(props) {
   return (

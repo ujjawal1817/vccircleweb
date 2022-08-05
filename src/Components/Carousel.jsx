@@ -51,7 +51,7 @@ export default function Carousel(props) {
           <div className="carousel-card">
             
               <div className="main-card-box ">
-                {props.item.stories_list.map((item, index) => {
+                {props.item.stories_list.map((item) => {
                   // if (index === 0) return null;
                   return (
                     <SwiperSlide>
