@@ -1,5 +1,7 @@
 import React from "react";
 import Card from "./Card";
+import moment from "moment";
+import Premium from "./Premium";
 
 export default function EditorSection(props) {
   return (
@@ -8,16 +10,11 @@ export default function EditorSection(props) {
       <div className="editor-section">
         <div className="editor-section-one editor-width ">
           <div className="res-edit-head">
-            <div className="premium-container">
-              <span className="premium-text-editor" style={props.st}>
-                PREMIUM
-              </span>
-              <img
-                src={props.item.stories_list[0].file_url}
-                alt=""
-                className="res-editor-head-img api-editor-img"
-              />
-            </div>
+            <img
+              src={props.item.stories_list[0].file_url}
+              alt=""
+              className="res-editor-head-img api-editor-img"
+            />
           </div>
 
           <p className="editor-section-title">
@@ -34,7 +31,12 @@ export default function EditorSection(props) {
             </a>
           </p>
           <p className="editor-section-author">
-            30 September . Madhurima Nandy
+            <span>
+              {moment(props.item.stories_list[0].publish).format("Do MMM YYYY")}{" "}
+              .{" "}
+            </span>
+
+            {props.item.stories_list[0].author_details[0].name}
           </p>
         </div>
         {/* 3 Small Divs */}
@@ -42,16 +44,20 @@ export default function EditorSection(props) {
           {props.item.stories_list.map((item, index) => {
             if (index === 0) return null;
             return (
+              <div className="premium-container">
               <Card
                 src={item.file_url}
                 flxCls="editor-flex"
-                heading={item.industry_details[0].name} 
+                heading={item.industry_details[0].name}
                 title={item.title}
                 author={item.author_details[0].name}
                 publish={item.publish}
                 width="164px"
                 sectionDetails="editor-sec-detail"
+                cardDes="card-desc"
               />
+               {item.premium==="1"?<Premium positionCls="editor-pre"/>:null}
+                </div>
             );
           })}
         </div>

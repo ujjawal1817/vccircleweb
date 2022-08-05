@@ -5,6 +5,8 @@ import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from "swiper";
 
 import "swiper/css/bundle";
 import Card from "./Card";
+import Premium from "./Premium";
+
 
 export default function Carousel(props) {
   return (
@@ -50,9 +52,12 @@ export default function Carousel(props) {
             
               <div className="main-card-box ">
                 {props.item.stories_list.map((item, index) => {
-                  if (index === 0) return null;
+                  // if (index === 0) return null;
                   return (
                     <SwiperSlide>
+                      <div className="premium-container">
+                        
+                      
                     <Card
                       src={item.file_url}
                       width="100%"
@@ -60,7 +65,12 @@ export default function Carousel(props) {
                       author={item.author_details[0].name}
                       publish={item.publish}
                       flxCls="cara-card"
+                      cardDes="card-desc"
                     />
+                    {item.premium === "1" ? (
+                        <Premium positionCls="cara-pre" />
+                      ) : null}
+                    </div>
                     </SwiperSlide>
                   );
                 })}

@@ -1,6 +1,8 @@
 import axios from "axios";
 import React from "react";
 import Card from "./Card";
+import moment from "moment";
+import Premium from "./Premium";
 
 export default function SectionOne(props) {
   return (
@@ -29,7 +31,13 @@ export default function SectionOne(props) {
               {props.item.stories_list[0].summary}
             </p>
             <p className="section-detail-author">
-              30 September . Madhurima Nandy
+              <span>
+                {moment(props.item.stories_list[0].publish).format(
+                  "Do MMM YYYY"
+                )}{" "}
+                .{" "}
+              </span>
+              {props.item.stories_list[0].author_details[0].name}
             </p>
             <button className="section-detail-button">Read More</button>
           </div>
@@ -56,15 +64,21 @@ export default function SectionOne(props) {
           {props.item.stories_list.map((item, index) => {
             if (index === 0) return null;
             return (
-              <Card
-                clsName="card-1"
-                src={item.file_url}
-                heading={item.industry_details[0].name}
-                title={item.title}
-                author={item.author_details[0].name}
-                publish={item.publish}
-                width="290px"
-              />
+              <>
+                <div className="premium-container">
+                  <Card
+                    clsName="card-1"
+                    src={item.file_url}
+                    cardDes="card-desc"
+                    heading={item.industry_details[0].name}
+                    title={item.title}
+                    author={item.author_details[0].name}
+                    publish={item.publish}
+                    width="100%"
+                  />
+                  {item.premium==="1"?<Premium positionCls="premium-text-editor"/>:null}
+                </div>
+              </>
             );
           })}
         </div>

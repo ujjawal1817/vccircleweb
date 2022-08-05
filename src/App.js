@@ -81,85 +81,83 @@ function App() {
           );
         }
 
-        if(item.section_slug==="vccircle-premium"){
-          return(
+        if (item.section_slug === "vccircle-premium") {
+          return (
             <>
-           <VcPremium item={item}/>
-           
-            
-            
+              <VcPremium item={item} />
             </>
-          )
+          );
         }
 
-        if(item.section_slug==="upcoming-events"){
-          return(
+        if (item.section_slug === "upcoming-events") {
+          return (
             <>
-            <UpcomingEvents/>
-            
+              <UpcomingEvents />
             </>
-          )
+          );
         }
-        if(item.section_slug==="founders"){
-          return(
+        if (item.section_slug === "founders") {
+          return (
             <>
-            <Carousel item={item} />
-            <Advertisement
+              <Carousel item={item} />
+              <Advertisement
                 src="./Images/advertisement.png"
                 pad={{ padding: "1rem 10rem" }}
                 width="100%"
               />
             </>
-          )
+          );
         }
-        if(item.section_slug==="most-popular"){
-          return(
-            <EditorSection item={item} />
-          )
+        if (item.section_slug === "most-popular") {
+          return <EditorSection item={item} />;
         }
-        if(item.section_slug==="vcc-tv"){
-          return(
+        if (item.section_slug === "vcc-tv") {
+          return (
             <>
-            <VccTv item={item}/>
-            <Advertisement
+              <VccTv item={item} />
+              <Advertisement
                 src="./Images/advertisement.png"
                 pad={{ padding: "1rem 10rem" }}
                 width="100%"
               />
             </>
-
-          )
+          );
         }
-        if(item.section_slug==="tmt"){
-          return(
-            <Carousel item={item}/>
-          )
+        if (item.section_slug === "tmt") {
+          return <Carousel item={item} />;
         }
-        if(item.section_slug==="financials"){
-          return(
+        if (item.section_slug === "financials") {
+          return (
             <>
-            <Carousel item={item}/>
-            <Advertisement
+              <Carousel item={item} />
+              <Advertisement
                 src="./Images/advertisement.png"
                 pad={{ padding: "1rem 10rem" }}
                 width="100%"
               />
             </>
-          )
+          );
         }
 
-        if(item.section_slug==="more-stories"){
-          return(
-          <>
-          <MoreStories item={item}/>
-          </>
-          )
+        if (item.section_slug === "more-stories") {
+          return (
+            <>
+              <MoreStories item={item} />
+            </>
+          );
         }
 
-
-
+        if (item.section_slug === "mergers-acquisitions") {
+          return (
+            <>
+              <Carousel item={item} />
+            </>
+          );
+        }
       })}
-      
+
+      <Footer />
+
       {/* <SectionTwo /> 
       <Advertisement
         src="./Images/advertisement2.png"

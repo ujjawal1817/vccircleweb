@@ -52,6 +52,7 @@ a {
 .premium-container {
   position: relative;
   /* height: 123px; */
+  padding-left: 10px;
 }
 
 .premium-text {
@@ -73,8 +74,54 @@ a {
   padding: 1px 3px;
 
   background-image: linear-gradient(90deg, #fe8c00, #f83600);
-  right: 15%;
-  bottom: 6%;
+  right: 2%;
+  bottom: 34%;
+}
+.editor-pre {
+  position: absolute;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 1px 3px;
+
+  background-image: linear-gradient(90deg, #fe8c00, #f83600);
+  right: 59%;
+  bottom: 14%;
+}
+.vc-pre {
+  position: absolute;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 1px 3px;
+  background-image: linear-gradient(90deg, #fe8c00, #f83600);
+  right: 3%;
+  bottom: 43%;
+}
+.cara-pre {
+  position: absolute;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 1px 3px;
+  background-image: linear-gradient(90deg, #fe8c00, #f83600);
+  right: 3%;
+  bottom: 34%;
+}
+.stes_flx{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.more-pre {
+  position: absolute;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 1px 3px;
+  background-image: linear-gradient(90deg, #fe8c00, #f83600);
+  bottom: 11%;
+  left: 20%
 }
 .nav-shadow {
   box-shadow: 0px 2px 4px #0000001a;
@@ -455,7 +502,7 @@ a {
   text-align: center;
   /* margin-top: 28px; */
 }
-.cara-container{
+.cara-container {
   margin-top: 25px;
 }
 
@@ -534,6 +581,9 @@ a {
   right: 1%;
   width: 228px;
   height: 301px;
+}
+.card-1 {
+  width: 100%;
 }
 
 .carousel-card {
@@ -858,6 +908,10 @@ height: 30rem; */
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
+  flex-wrap: wrap;
+}
+.more-story-flex {
+  display: flex;
 }
 .ms-sectionone {
   display: flex;
@@ -884,14 +938,17 @@ height: 30rem; */
   color: #000000;
   font-size: 1.5rem;
   font-weight: bold;
-  width: 29rem;
-  padding: 1.3rem 0rem;
+  width: 29vw;
+  padding: 8px 0px;
+  
 }
 .ms-sub-para {
   color: #798692;
   font-size: 1.2rem;
 }
-
+.more-padd{
+  padding: 4px 7px
+}
 .footer-main {
   background-color: #000000;
   margin-top: 2rem;

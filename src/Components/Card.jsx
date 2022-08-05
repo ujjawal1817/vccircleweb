@@ -1,4 +1,5 @@
 import React from "react";
+import moment from "moment";
 
 export default function Card(props) {
   return (
@@ -9,9 +10,9 @@ export default function Card(props) {
         </div>
         <div className={props.sectionDetails}>
           <p className="card-title">{props.heading}</p>
-          <p className="card-desc">{props.title}</p>
+          <p className={props.cardDes}>{props.title}</p>
           <p className="card-author">
-            <span>{props.publish}</span>
+            <span>{moment(props.publish).format('Do MMM YYYY')} . </span>
             {props.author}
           </p>
         </div>
