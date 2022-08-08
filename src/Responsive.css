@@ -159,16 +159,36 @@
     margin-top: 80px;
   }
   .section-sub-img {
-    width: 94%;
-    margin-left: 1px;
+    width: 100%;
+    margin: 0 auto;
+    
   }
-  .section-details {
+  /* .section-details {
     width: 92%;
-  }
+  } */
   .section-two {
     flex-wrap: wrap;
-    padding-left: 3rem;
+    /* padding-left: 3rem; */
     display: block;
+  }
+  .resp-card-img {
+    max-width: 145px;
+  }
+  .resp-div-card {
+    display: flex;
+  }
+  .resp-details-card {
+    padding: 7px 9px;
+  }
+  /* .imgCls {
+    width: 152px;
+  } */
+  .premium-text-editor {
+    bottom: 13px;
+    left: 100px;
+  }
+  .cara-card {
+    height: auto;
   }
 
   .res-card-1 {
@@ -212,12 +232,22 @@
   }
 
   .card-desc {
-    font-size: 9px;
-    font-weight: 700;
-    color: #222222;
-    width: 100%;
-    margin-top: 1rem;
+    font-size: 11px;
   }
+  .premium-container {
+    /* position: relative; */
+    height: auto;
+    padding-left: 0px;
+  }
+  .editor-pre {
+    bottom: 22px;
+    left: 120px;
+  }
+  .more-pre {
+    bottom: 13px;
+    left: 119px
+}
+
   .card-para {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -241,14 +271,14 @@
     width: 100%;
   }
   .res-editor-head-img {
-    width: 92%;
+    width: 100%;
   }
   .res-edit-head-img {
     width: 82%;
   }
   .editor-section {
     display: block;
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
   }
   .editor-section-title {
     font-size: 14px;
@@ -280,7 +310,7 @@
   } */
   .editor-section-heading {
     font-size: 15px;
-    margin-left: 3rem;
+    /* margin-left: 3rem; */
   }
   .editor-width {
     width: 100%;
@@ -317,7 +347,7 @@
   }
   .editor-section-desc {
     font-size: 12px;
-    width: 78%;
+    width: 100%;
   }
   .editor-section-author {
     font-size: 9px;
@@ -681,8 +711,8 @@
 @media (min-width: 414px) and (max-width: 768px) {
   .container {
     width: auto;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .menu-nav-img {
     /* height: 2.3vh; */
@@ -741,12 +771,12 @@
     top: 73%;
   }
   .res-editor-head-img {
-    width: 97%;
+    width: 100%;
     height: auto;
   }
   .editor-section-heading {
     font-size: 14px;
-    margin-left: 27px;
+    /* margin-left: 27px; */
   }
 
   .editor-section-title {
@@ -837,7 +867,7 @@
     height: 114px;
   }
   .premium-text-editor {
-    right: 5%;
+    left: 100px
   }
   .premium-title {
     font-size: 12px;
@@ -884,7 +914,7 @@
     font-size: 15px;
   }
   .ms-para {
-    /* width: 100%; */
+    width: 100%;
     font-size: 11px;
     padding: 10px 0px;
   }
@@ -909,19 +939,14 @@
     width: 37%;
 } */
   .vcinvestment {
-   
     bottom: 1%;
-   
+
     left: 2%;
-   
-}
-.social-infographic-img {
-  width: 99%;
-  /* height: 28vh; */
-}
-
-
-
+  }
+  .social-infographic-img {
+    width: 99%;
+    /* height: 28vh; */
+  }
 
   .footer-main {
     width: 1366px;

@@ -42,6 +42,12 @@ a {
   text-decoration: none;
   list-style-type: none;
 }
+.colr {
+  color: #222222;
+}
+.authcolr {
+  color: #939393;
+}
 
 .container {
   width: 136.6rem;
@@ -72,11 +78,11 @@ a {
   font-size: 0.9rem;
   font-weight: bold;
   padding: 1px 3px;
-
   background-image: linear-gradient(90deg, #fe8c00, #f83600);
-  right: 2%;
-  bottom: 34%;
+  left: 264px;
+  bottom: 94px;
 }
+
 .editor-pre {
   position: absolute;
   color: #ffffff;
@@ -85,8 +91,8 @@ a {
   padding: 1px 3px;
 
   background-image: linear-gradient(90deg, #fe8c00, #f83600);
-  right: 59%;
-  bottom: 14%;
+  bottom: 23px;
+  left: 113px;
 }
 .vc-pre {
   position: absolute;
@@ -95,9 +101,10 @@ a {
   font-weight: bold;
   padding: 1px 3px;
   background-image: linear-gradient(90deg, #fe8c00, #f83600);
-  right: 3%;
-  bottom: 43%;
+  right: 7px;
+  bottom: 114px;
 }
+
 .cara-pre {
   position: absolute;
   color: #ffffff;
@@ -105,10 +112,10 @@ a {
   font-weight: bold;
   padding: 1px 3px;
   background-image: linear-gradient(90deg, #fe8c00, #f83600);
-  right: 3%;
-  bottom: 34%;
+  right: 12px;
+  bottom: 92px;
 }
-.stes_flx{
+.stes_flx {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -120,8 +127,8 @@ a {
   font-weight: bold;
   padding: 1px 3px;
   background-image: linear-gradient(90deg, #fe8c00, #f83600);
-  bottom: 11%;
-  left: 20%
+  bottom: 11px;
+    left: 116px
 }
 .nav-shadow {
   box-shadow: 0px 2px 4px #0000001a;
@@ -365,7 +372,7 @@ a {
 }
 .card-desc {
   font-size: 14px;
-  font-weight: 700;
+  /* font-weight: 700; */
   color: #222222;
   width: 27rem;
   padding: 2px 0px;
@@ -418,7 +425,7 @@ a {
 .editor-section-desc {
   font-size: 1.8rem;
   color: #222222;
-  font-weight: 800;
+  /* font-weight: 800; */
   width: 40rem;
   margin-top: 1rem;
 }
@@ -657,6 +664,7 @@ a {
   border: 1px solid #ededed;
   padding: 5px;
   border-radius: 10px;
+  height: 250px;
 }
 
 .main-container {
@@ -937,17 +945,16 @@ height: 30rem; */
 .ms-para {
   color: #000000;
   font-size: 1.5rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   width: 29vw;
   padding: 8px 0px;
-  
 }
 .ms-sub-para {
   color: #798692;
   font-size: 1.2rem;
 }
-.more-padd{
-  padding: 4px 7px
+.more-padd {
+  padding: 4px 7px;
 }
 .footer-main {
   background-color: #000000;
