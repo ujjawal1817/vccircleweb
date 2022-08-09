@@ -89,7 +89,7 @@ export default function SectionOne(props) {
                   <div className="premium-container">
                     <Card
                       clsName="card-1"
-                      imgCls="imgCls"
+                      // imgCls="imgCls"
                       imgSlug={item.slug}
                       src={item.file_url}
                       slughead={item.industry_details[0].slug}

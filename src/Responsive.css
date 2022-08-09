@@ -420,6 +420,9 @@
   /* .premium-container {
   height: 93px;
 } */
+.author-flx {
+   display: block; 
+}
   .vc-pre-span {
     position: absolute;
     bottom: 9px;

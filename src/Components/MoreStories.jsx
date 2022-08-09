@@ -19,7 +19,7 @@ export default function MoreStories(props) {
                     <Card
                       src={item.file_url}
                       imgSlug={item.slug}
-                      imgCls="more-imgcls"
+                      // imgCls="more-imgcls"
                       slughead={item.industry_details[0].slug}
                       heading={item.industry_details[0].name}
                       slug={item.slug}

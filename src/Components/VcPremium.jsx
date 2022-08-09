@@ -60,7 +60,7 @@ export default function VcPremium(props) {
                           <Card
                             src={item.file_url}
                             imgSlug={item.slug}
-                            imgCls="vc-pre-imgcls"
+                            // imgCls="vc-pre-imgcls"
                             width="100%"
                             title={item.title}
                             slug={item.slug}

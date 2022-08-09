@@ -7,23 +7,23 @@ export default function Card(props) {
     <div className={props.clsName}>
       <div className={props.flxCls}>
         <div className={props.imgVccls}>
-          <Link to={props?.imgSlug || "/"}>
+          <Link to={props?.imgSlug || ""}>
             <img
               src={props.src}
               alt=""
               width={props.width}
-              className={props.imgCls}
+              // className={props.imgCls}
               height={props.height}
             />
           </Link>
         </div>
         <div className={props.sectionDetails}>
           <p className="card-title">
-            <Link to={props?.slughead || "/"}>{props.heading}</Link>
+            <Link to={props?.slughead || ""}>{props.heading}</Link>
           </p>
 
           <p className={props.cardDes}>
-            <Link to={props?.slug || "/"} className="colr">
+            <Link to={props?.slug || ""} className="colr">
               {props.title}
             </Link>
           </p>
@@ -36,7 +36,7 @@ export default function Card(props) {
             </Link>
           </li>
           <li >
-            <Link to={props?.slugauth || "/"} className={props.tooltipcls}>
+            <Link to={props?.slugauth || ""} className={props.tooltipcls}>
               {props.sname}
             <span className="tooltiptext">{props.authorsecond}</span>
             </Link>
