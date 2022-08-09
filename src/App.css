@@ -116,15 +116,14 @@ a {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: rgba(0, 0, 0, 0.071);
+  background-color: #ddd;
   color: rgb(24, 22, 22);
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-
-  /* Position the tooltip */
   position: absolute;
   z-index: 1;
+  bottom: 14px;
 }
 
 .tooltip:hover .tooltiptext {
@@ -420,7 +419,6 @@ a {
 
 .imgCls {
   border-radius: 10px;
-  
 }
 .card-img-cls {
   height: 162px;
@@ -435,7 +433,7 @@ a {
   width: 100%;
   /* object-fit: cover; */
 }
-.more-imgcls{
+.more-imgcls {
   border-radius: 10px;
 }
 
