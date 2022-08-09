@@ -12,7 +12,7 @@ export default function Card(props) {
               src={props.src}
               alt=""
               width={props.width}
-              // className={props.imgCls}
+              className={props.imgCls}
               height={props.height}
             />
           </Link>

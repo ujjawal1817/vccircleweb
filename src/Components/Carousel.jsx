@@ -61,7 +61,7 @@ export default function Carousel(props) {
                           <Card
                             src={item.file_url}
                             imgSlug={item.slug}
-                            // imgCls="card-img-cls"
+                            imgCls="card-img-cls"
                             width="100%"
                             title={item.title}
                             slug={item.slug}
