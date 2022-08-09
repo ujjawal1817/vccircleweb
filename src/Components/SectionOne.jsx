@@ -56,6 +56,8 @@ export default function SectionOne(props) {
               <button className="section-detail-button">Read More</button>
             </div>
 
+            <div className="section-img">
+
             {props.item.stories_list[0].industry_details[0].slug ? (
               <Link
                 to={props?.item.stories_list[0].industry_details[0].slug || ""}
@@ -67,8 +69,7 @@ export default function SectionOne(props) {
                 />
               </Link>
             ) : null}
-
-            <div className="section-img"></div>
+            </div>
           </div>
 
           <div className="editor-section-three editor-width re-editor-sidead res-editor-section-sidead">
@@ -88,6 +89,7 @@ export default function SectionOne(props) {
                   <div className="premium-container">
                     <Card
                       clsName="card-1"
+                      imgCls="imgCls"
                       imgSlug={item.slug}
                       src={item.file_url}
                       slughead={item.industry_details[0].slug}
@@ -97,6 +99,9 @@ export default function SectionOne(props) {
                       title={item.title}
                       slugauth={item.author_details[0].slug}
                       author={item.author_details[0].name}
+                      authorsecond={item.author_details.length>1?item.author_details[1].name:""}
+                      sname={item.author_details.length>1?"+1":""}
+                      tooltipcls="tooltip"
                       publish={item.publish}
                       width="100%"
                       imgVccls="resp-card-img"

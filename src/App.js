@@ -11,7 +11,6 @@ import VccTv from "./Components/VccTv";
 import Signup from "./Components/Signup";
 import MoreStories from "./Components/MoreStories";
 import Footer from "./Components/Footer";
-import UpcomingEventsResponsive from "./Components/UpcomingEventsResponsive";
 import SectionOne from "./Components/SectionOne";
 import React, { useEffect, useState } from "react";
 import axios from "axios"

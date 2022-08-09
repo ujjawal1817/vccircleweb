@@ -55,6 +55,7 @@ export default function EditorSection(props) {
                   <div className="premium-container">
                     <Card
                       src={item.file_url}
+                      imgCls="imgCls"
                       imgSlug={item.slug}
                       flxCls="editor-flex"
                       slughead={item.industry_details[0].slug}

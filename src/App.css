@@ -53,7 +53,7 @@ a {
   width: 136.6rem;
   padding-left: 3.7rem;
   padding-right: 3.7rem;
-  margin: auto;
+  /* margin: auto; */
 }
 .premium-container {
   position: relative;
@@ -104,7 +104,32 @@ a {
   right: 7px;
   bottom: 114px;
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  left: 8px;
+  top: 6px;
+}
+.author-flx {
+  display: flex;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.071);
+  color: rgb(24, 22, 22);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
 
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 .cara-pre {
   position: absolute;
   color: #ffffff;
@@ -128,7 +153,7 @@ a {
   padding: 1px 3px;
   background-image: linear-gradient(90deg, #fe8c00, #f83600);
   bottom: 11px;
-    left: 116px
+  left: 116px;
 }
 .nav-shadow {
   box-shadow: 0px 2px 4px #0000001a;
@@ -394,6 +419,23 @@ a {
 /* margin-top: 1rem; */
 
 .imgCls {
+  border-radius: 10px;
+  
+}
+.card-img-cls {
+  height: 162px;
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+}
+.vc-pre-imgcls {
+  height: 160px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  /* object-fit: cover; */
+}
+.more-imgcls{
   border-radius: 10px;
 }
 

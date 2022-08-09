@@ -8,6 +8,8 @@ import Card from "./Card";
 import Premium from "./Premium";
 
 export default function Carousel(props) {
+  
+  
   return (
     <>
       {props.item.stories_list[0] ? (
@@ -59,11 +61,15 @@ export default function Carousel(props) {
                           <Card
                             src={item.file_url}
                             imgSlug={item.slug}
+                            imgCls="card-img-cls"
                             width="100%"
                             title={item.title}
                             slug={item.slug}
                             slugauth={item.author_details[0].slug}
                             author={item.author_details[0].name}
+                            authorsecond={item.author_details.length>1?item.author_details[1].name:""}
+                            sname={item.author_details.length>1? "+1":""}
+                            tooltipcls="tooltip"
                             publish={item.publish}
                             flxCls="cara-card"
                             cardDes="card-desc"

@@ -451,6 +451,7 @@
   .tv-section {
     flex-wrap: wrap;
     border-style: none;
+    justify-content: flex-start;
   }
   .tv-heading {
     font-size: 14px;
