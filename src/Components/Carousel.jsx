@@ -29,7 +29,7 @@ export default function Carousel(props) {
             <Swiper
               breakpoints={{
                 340: {
-                  slidesPerView: 1,
+                  slidesPerView: 2,
                   spaceBetween: 20,
                 },
                 768: {
@@ -38,7 +38,7 @@ export default function Carousel(props) {
                 },
                 1024: {
                   slidesPerView: 4,
-                  spaceBetween: 50,
+                  spaceBetween: 10,
                 },
               }}
               // install Swiper modules
