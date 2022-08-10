@@ -18,6 +18,9 @@ export default function Navbar() {
   };
   return (
     <>
+    <div className="nav-sticky">
+      
+    
     <div className="nav-shadow">
       <div className="container">
         <div className="nav-container">
@@ -150,6 +153,7 @@ export default function Navbar() {
           </div>
         </div>
       
+      </div>
       </div>
       </div>
     </>

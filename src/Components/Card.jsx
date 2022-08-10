@@ -32,13 +32,16 @@ export default function Card(props) {
           <li className="card-author">
             <span>{moment(props.publish).format("Do MMM YYYY")} . </span>
             <Link to={props?.slugauth || "/"} className="authcolr">
-              
+              <span>
               {props.author}
+              </span>
+
             </Link>
           </li>
           <li >
             <Link to={props?.slugauth || "/"} className={props.tooltipcls}>
-              {props.sname}
+              <span>
+              {props.sname} </span>
             <span className="tooltiptext">{props.authorsecond}</span>
             </Link>
           </li>
