@@ -1050,6 +1050,32 @@ height: 30rem; */
 .res-editor-section-sidead {
   display: none;
 }
+.loader {
+  
+  display: block;
+  margin: 300px auto;
+  height: 50px;
+  width: 50px;
+  -webkit-animation: spin 0.5s infinite linear;
+  animation: spin 0.5s infinite linear;
+  border: 6px solid black;
+  border-left-color: white;
+  border-radius: 100%;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets

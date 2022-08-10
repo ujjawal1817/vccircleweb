@@ -27,7 +27,8 @@ export default function Card(props) {
               {props.title}
             </Link>
           </p>
-           <ul className="author-flx">
+          
+          <ul className="author-flx">
           <li className="card-author">
             <span>{moment(props.publish).format("Do MMM YYYY")} . </span>
             <Link to={props?.slugauth || "/"} className="authcolr">
@@ -42,6 +43,7 @@ export default function Card(props) {
             </Link>
           </li>
           </ul>
+          
         </div>
       </div>
     </div>
