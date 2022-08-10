@@ -158,12 +158,12 @@ a {
 .nav-shadow {
   box-shadow: 0px 2px 4px #0000001a;
 }
-/* .nav-sticky{
-  position: sticky;
+.nav-sticky{
+  position: fixed;
     z-index: 996;
     top: 0px;
     background-color: white;
-} */
+}
 .res-nav-subscribe-ul {
   display: none;
 }
@@ -337,7 +337,7 @@ a {
   width: 128.6rem;
   height: auto;
   background-color: #f0f0f0;
-  margin-top: 3.6rem;
+  margin-top: 17.6rem;
 }
 .advertisement-heading {
   font-size: 1.2rem;
