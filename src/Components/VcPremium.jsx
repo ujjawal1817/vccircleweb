@@ -9,8 +9,8 @@ export default function VcPremium(props) {
   return (
     <>
       {props.item.stories_list[0] ? (
-        <div className="main-container">
           <div className="container">
+        <div className="main-container">
             <div className="vcpre-header">
               <div className="vc-pre-logo">
                 <p className="vcpre-headingone">VCCircle Premium</p>

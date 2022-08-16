@@ -5,8 +5,7 @@
 
   .container {
     width: auto;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin: 0  2px;
   }
   .nav-border {
     border-bottom: 1px solid #e3e3e3;
@@ -19,7 +18,6 @@
     top: 0;
     height: auto;
     box-shadow: 0px 5px 10px #00000014;
-    margin-left: -5px;
     padding: 0px 0px
   }
   .close-btn {
@@ -68,7 +66,7 @@
     display: block;
     font-size: 5rem;
     display: flex;
-    margin: 0px 14px;
+    /* margin: 0px 14px; */
   }
 
   .respons_nav {
@@ -716,8 +714,9 @@
 @media (min-width: 414px) and (max-width: 768px) {
   .container {
     width: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    margin: 0 2px;
   }
   .menu-nav-img {
     /* height: 2.3vh; */
@@ -939,6 +938,10 @@
 }
 
 @media (min-width: 769px) and (max-width: 1080px) {
+  .container{
+    margin: 0 2px;
+  }
+  
   .vcinvestment {
     bottom: 1%;
 
@@ -950,11 +953,11 @@
   }
 
   .footer-main {
-    width: 1366px;
+    width: auto;
   }
 
   .main-container {
-    width: 1366px;
+    width: auto;
   }
 }
 
