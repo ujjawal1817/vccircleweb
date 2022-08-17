@@ -29,18 +29,31 @@ export default function VcPremium(props) {
               <Swiper
                 // install Swiper modules
                 breakpoints={{
-                  340: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
+                  // 340: {
+                  //   slidesPerView: 1,
+                  //   spaceBetween: 20,
+                  // },
+                  // 768: {
+                  //   slidesPerView: 2,
+                  //   spaceBetween: 50,
+                  // },
+                  // 1024: {
+                  //   slidesPerView: 4,
+                  //   spaceBetween: 50,
+                  // },
+
+                  998:{
+                    slidesPerView:4,
+                    spaceBetween:20,
                   },
-                  768: {
-                    slidesPerView: 2,
-                    spaceBetween: 50,
+                  769:{
+                    slidesPerView:2,
+                    spaceBetween:40,
                   },
-                  1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 50,
-                  },
+                  414:{
+                    slidesPerView:1,
+                    spaceBetween:40,
+                  }
                 }}
                 modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
                 spaceBetween={10}

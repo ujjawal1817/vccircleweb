@@ -68,6 +68,9 @@
     display: flex;
     /* margin: 0px 14px; */
   }
+  .advertisement-bg-top {
+    display: none;
+  }
 
   .respons_nav {
     display: flex;
@@ -540,7 +543,7 @@
     display: none;
   }
   .swiper-slide {
-    width: 303px !important;
+    width: 354px !important;
   }
 
   .cara-author {
@@ -698,6 +701,10 @@
   .side-res-ad {
     background: none;
   }
+  .swiper-button-prev:after {
+    display: none !important;
+  }
+  
 }
 
 @media (min-width: 320px) and (max-width: 1200px) {

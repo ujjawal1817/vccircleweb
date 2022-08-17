@@ -44,12 +44,14 @@ function App() {
             src="./Images/advertisement.png"
             pad={{ padding: "1rem 10rem" }}
             width="100%"
+            advBg="advertisement-bg-top"
           />
                   <SectionOne item={item} />
                   <Advertisement
                     src="./Images/advertisement.png"
                     pad={{ padding: "1rem 10rem" }}
                     width="100%"
+                    advBg="advertisement-bg"
                   />
                 </>
               );
@@ -72,6 +74,7 @@ function App() {
                     src="./Images/advertisement.png"
                     pad={{ padding: "1rem 10rem" }}
                     width="100%"
+                    advBg="advertisement-bg"
                   />
                 </>
               );
@@ -100,6 +103,7 @@ function App() {
                     src="./Images/advertisement.png"
                     pad={{ padding: "1rem 10rem" }}
                     width="100%"
+                    advBg="advertisement-bg"
                   />
                 </>
               );
@@ -115,6 +119,7 @@ function App() {
                     src="./Images/advertisement.png"
                     pad={{ padding: "1rem 10rem" }}
                     width="100%"
+                    advBg="advertisement-bg"
                   />
                 </>
               );
@@ -130,6 +135,7 @@ function App() {
                     src="./Images/advertisement.png"
                     pad={{ padding: "1rem 10rem" }}
                     width="100%"
+                    advBg="advertisement-bg"
                   />
                 </>
               );

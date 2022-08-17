@@ -376,12 +376,19 @@ a {
   display: none;
 }
 
-.advertisement-bg {
+.advertisement-bg-top {
   /* width: 128.6rem; */
   height: auto;
   background-color: #f0f0f0;
   margin-top: 150px;
   
+}
+
+.advertisement-bg{
+  height: auto;
+  background-color: #f0f0f0;
+  margin-top: 50px;
+
 }
 
 .advertisement-heading {
