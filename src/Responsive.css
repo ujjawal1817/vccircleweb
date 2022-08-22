@@ -330,6 +330,12 @@
   /* .side-ad {
     width: 57%;
   } */
+  .section-details{
+    width: 100%;
+  }
+  .section-img{
+    width: 100%;
+  }
   .sidead-para {
     background: none;
   }

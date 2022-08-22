@@ -437,6 +437,12 @@ a {
   width: 100%;
   border-radius: 20px;
 }
+.section-details{
+  width: 50%;
+}
+.section-img{
+  width: 50%;
+}
 
 .section-detail-button {
   width: 16rem;
