@@ -15,12 +15,14 @@
     }
     .card-img{
         width: 100%;
+        height: 117px;
     }
     .card-title-skel{
         width: 100%;
     }
     .img {
         width: 100%;
+        height: 220px
     }
 
     .sub-sec-one {
