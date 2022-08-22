@@ -4,7 +4,7 @@ export default function CardsSkel() {
     return (
         <>
             <div className='resp-card'>
-                <div className="card-img">
+                <div className="skel-card-img">
                     <img alt='' className='card-img'/>
                 </div>
                 <div className='resp-card-detail'>

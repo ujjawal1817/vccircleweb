@@ -31,10 +31,11 @@ function App() {
   }, []);
   return (
     <>
- {/* <TopStoriesSkel /> */}
+     {/* <Navbar />
+ <TopStoriesSkel /> */}
 
 
-      <Navbar />
+        <Navbar />
       {!IsLoading ? <>
         <TopStoriesSkel />
 
@@ -172,7 +173,7 @@ function App() {
 
           <Footer />
         </>
-      }   
+      }     
     </>
   );
 }
