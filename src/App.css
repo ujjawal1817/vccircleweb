@@ -70,6 +70,7 @@ a {
   padding-left: 10px;
 }
 
+
 .premium-text {
   position: absolute;
   color: #ffffff;
@@ -304,7 +305,7 @@ a {
 .nav-container {
   /* width: auto; */
   height: auto;
-  padding: 11px 28px
+  padding: 13px 28px
 }
 
 .navbar {
@@ -737,6 +738,10 @@ a {
 
 .card-1 {
   width: 100%;
+}
+.card-skel{
+  width: 100px;
+  height: 100px;
 }
 
 .carousel-card {

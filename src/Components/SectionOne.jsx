@@ -4,14 +4,15 @@ import moment from "moment";
 import Premium from "./Premium";
 import { Link } from "react-router-dom";
 
+
 export default function SectionOne(props) {
   return (
     <>
       {props.item.stories_list[0] ? (
         <div className="container" key={props.item.stories_list[0].feid}>
-          <div className="section-one">
+           <div className="section-one">
             <div className="section-details">
-              <p className="section-detail-heading">
+              <p className="section-detail-heading ">
                 {props.item.stories_list[0].industry_details[0].slug ? (
                   <Link
                     to={
@@ -56,7 +57,7 @@ export default function SectionOne(props) {
               <button className="section-detail-button">Read More</button>
             </div>
 
-            <div className="section-img">
+            <div className="section-img " >
 
             {props.item.stories_list[0].industry_details[0].slug ? (
               <Link
@@ -65,11 +66,12 @@ export default function SectionOne(props) {
                 <img
                   src={props.item.stories_list[0].file_url}
                   alt="section-im"
-                  className="section-sub-img"
+                  className="section-sub-img skeleton"
                 />
               </Link>
             ) : null}
             </div>
+            
           </div>
 
           <div className="editor-section-three editor-width re-editor-sidead res-editor-section-sidead">
@@ -79,7 +81,7 @@ export default function SectionOne(props) {
               alt=""
               className="side-ad res-sidead"
             />
-          </div>
+          </div> 
 
           <div className="section-two">
             {props.item.stories_list.map((item, index) => {
@@ -89,13 +91,13 @@ export default function SectionOne(props) {
                   <div className="premium-container">
                     <Card
                       clsName="card-1"
-                      imgCls="imgCls"
+                      imgCls="imgCls "
                       imgSlug={item.slug}
                       src={item.file_url}
                       slughead={item.industry_details[0].slug}
                       heading={item.industry_details[0].name}
                       slug={item.slug}
-                      cardDes="card-desc"
+                      cardDes="card-desc "
                       title={item.title}
                       slugauth={item.author_details[0].slug}
                       author={item.author_details[0].name}
@@ -104,17 +106,20 @@ export default function SectionOne(props) {
                       tooltipcls="tooltip"
                       publish={item.publish}
                       width="100%"
-                      imgVccls="resp-card-img"
-                      flxCls="resp-div-card"
-                      sectionDetails="resp-details-card"
+                      imgVccls="resp-card-img "
+                      flxCls="resp-div-card "
+                      sectionDetails="resp-details-card "
                     />
                     {item.premium === "1" ? (
                       <Premium positionCls="premium-text-editor" />
                     ) : null}
+                    
                   </div>
+                  
                 </>
               );
             })}
+            
           </div>
         </div>
       ) : null}

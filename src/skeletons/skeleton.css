@@ -1,0 +1,134 @@
+.adskel {
+    height: 145px;
+    margin-top: 150px;
+    animation: skel-load 1s linear infinite alternate;
+    /* display: block; */
+}
+
+.section-detail {
+    display: flex;
+    margin-top: 20px;
+}
+
+.heading {
+    width: 20%;
+    height: 12px;
+    border-radius: 10px;
+    animation: skel-load 1s linear infinite alternate;
+}
+
+.title {
+    width: 70%;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    animation: skel-load 1s linear infinite alternate;
+}
+
+.desc {
+    width: 400px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    animation: skel-load 1s linear infinite alternate;
+}
+
+.img {
+    width: 680px;
+    height: 486px;
+    margin-top: 20px;
+    border-radius: 10px;
+    animation: skel-load 1s linear infinite alternate;
+
+}
+
+.sub-sec-one {
+    width: 50%;
+}
+
+.author-details {
+    display: flex;
+}
+
+.date {
+    width: 100px;
+    height: 12px;
+    margin-top: 30px;
+    border-radius: 10px;
+    animation: skel-load 1s linear infinite alternate;
+}
+
+.author-name {
+    width: 100px;
+    height: 12px;
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-left: 10px;
+    animation: skel-load 1s linear infinite alternate;
+
+}
+
+.btn-skel {
+    width: 160px;
+    height: 34px;
+    margin-top: 30px;
+    border-radius: 10px;
+    animation: skel-load 1s linear infinite alternate;
+}
+.cards{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-img{
+    width: 331px;
+    height: 186px;
+    border-radius: 10px;
+    animation: skel-load 1s linear infinite alternate;
+}
+.card-heading{
+    width: 100px;
+    height: 12px;
+    margin-top: 20px;
+    border-radius: 10px;
+    animation: skel-load 1s linear infinite alternate;
+}
+
+.card-title-skel{
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    animation: skel-load 1s linear infinite alternate;
+}
+.card-authorskel{
+    display: flex;
+    
+}
+.card-date{
+    width: 100px;
+    height: 12px;
+    margin-top: 20px;
+    border-radius: 10px;
+    animation: skel-load 1s linear infinite alternate;
+
+}
+.card-author-name{
+    width: 100px;
+    height: 12px;
+    margin-top: 20px;
+    border-radius: 10px;
+    animation: skel-load 1s linear infinite alternate;
+
+}
+
+@keyframes skel-load {
+    0% {
+        background-color: hsl(200, 20%, 70%);
+    }
+
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}

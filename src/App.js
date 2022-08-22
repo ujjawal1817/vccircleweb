@@ -15,6 +15,8 @@ import SectionOne from "./Components/SectionOne";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Loader from "./Components/Loader";
+import TopStoriesSkel from "./skeletons/TopStoriesSkel";
+
 
 function App() {
   const [data, setData] = useState([]);
@@ -29,24 +31,30 @@ function App() {
   }, []);
   return (
     <>
-    {IsLoading ? (
-      <>
+ {/* <TopStoriesSkel /> */}
+
+
       <Navbar />
-      
-        
-          
+      {!IsLoading ? <>
+        <TopStoriesSkel />
+
+      </>
+        :
+        <>
+
 
           {data.map((item) => {
             if (item.section_slug === "top-stories") {
               return (
                 <>
-                <Advertisement
-            src="./Images/advertisement.png"
-            pad={{ padding: "1rem 10rem" }}
-            width="100%"
-            advBg="advertisement-bg-top"
-          />
+                  <Advertisement
+                    src="./Images/advertisement.png"
+                    pad={{ padding: "1rem 10rem" }}
+                    width="100%"
+                    advBg="advertisement-bg-top "
+                  />
                   <SectionOne item={item} />
+
                   <Advertisement
                     src="./Images/advertisement.png"
                     pad={{ padding: "1rem 10rem" }}
@@ -56,6 +64,7 @@ function App() {
                 </>
               );
             }
+
             if (item.section_slug === "editors-pick") {
               return (
                 <>
@@ -120,6 +129,7 @@ function App() {
                     pad={{ padding: "1rem 10rem" }}
                     width="100%"
                     advBg="advertisement-bg"
+
                   />
                 </>
               );
@@ -158,14 +168,11 @@ function App() {
             }
             return null;
           })}
-       
-      
-      <Footer />
-      </>
-      ) : (
-        <Loader />
-       
-      )}
+
+
+          <Footer />
+        </>
+      }   
     </>
   );
 }
