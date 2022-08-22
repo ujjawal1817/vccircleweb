@@ -49,6 +49,8 @@ export default function SectionOne(props) {
                     to={
                       props?.item.stories_list[0].author_details[0].slug || ""
                     }
+
+                    className='authcolr'
                   >
                     {props.item.stories_list[0].author_details[0].name}
                   </Link>
