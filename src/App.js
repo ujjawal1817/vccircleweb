@@ -14,7 +14,6 @@ import Footer from "./Components/Footer";
 import SectionOne from "./Components/SectionOne";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Loader from "./Components/Loader";
 import TopStoriesSkel from "./skeletons/TopStoriesSkel";
 
 
