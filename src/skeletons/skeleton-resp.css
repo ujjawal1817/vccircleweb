@@ -137,9 +137,20 @@
         width: auto;
         padding: 0px 10px;
     }
-
+.section-detail{
+    flex-direction: column-reverse;
+}
+.sub-sec-one{
+    width: 100%;
+}
+.img{
+    width: 100%;
+}
+.heading {
+    margin-top: 20px;
+}
     .card-img {
-        width: 265px;
+        width: 220px;
         height: 186px;
         border-radius: 10px;
         animation: skel-load 1s linear infinite alternate;
