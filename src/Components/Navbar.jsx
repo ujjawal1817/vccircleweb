@@ -18,7 +18,7 @@ export default function Navbar() {
   };
   return (
     <>
-      <div className="container">
+      {/* <div className="container"> */}
         <div className="nav-sticky">
           <div className="nav-shadow">
             {/* <div className="container"> */}
@@ -163,7 +163,7 @@ export default function Navbar() {
             {/* </div> */}
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </>
   );
 }

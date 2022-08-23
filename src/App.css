@@ -183,6 +183,7 @@ a {
   z-index: 996;
   top: 0px;
   background-color: white;
+  width: 100%;
 }
 
 .res-nav-subscribe-ul {
@@ -338,7 +339,7 @@ a {
 .sub-nav {
   display: flex;
   justify-content: space-between;
-  width: 131rem;
+  width: 100%
 }
 
 .sub-ul-nav {
