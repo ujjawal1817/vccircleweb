@@ -31,7 +31,7 @@ function App() {
   }, []);
   return (
     <>
- 
+ {/* <TopStoriesSkel/> */}
 
          <Navbar />
       {!IsLoading ? <>
@@ -171,7 +171,7 @@ function App() {
 
           <Footer />
         </>
-      }      
+      }       
     </>
   );
 }

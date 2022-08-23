@@ -47,7 +47,7 @@ export default function VcPremium(props) {
                     spaceBetween:20,
                   },
                   769:{
-                    slidesPerView:2,
+                    slidesPerView:3,
                     spaceBetween:40,
                   },
                   414:{
