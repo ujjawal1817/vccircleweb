@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="container">
-      <div className="footer-main">
+    <div className="footer-main">
+        <div className="container">
         <div className="footer-mosiac-img">
           <img src="./Images/Mosaic-digital.png" alt="footer-img" className="res-footer-img" />
         </div>

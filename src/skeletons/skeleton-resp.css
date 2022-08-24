@@ -132,7 +132,7 @@
 
 }
 
-@media (max-width:1366px) {
+@media (max-width:992px) {
     .container {
         width: auto;
         padding: 0px 10px;

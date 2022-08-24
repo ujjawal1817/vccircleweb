@@ -53,6 +53,7 @@ export default function EditorSection(props) {
                 if (index === 0) return null;
                 return (
                   <div className="premium-container">
+                    {console.log(item)}
                     <Card
                       src={item.file_url}
                       imgCls="imgCls"
