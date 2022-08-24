@@ -9,8 +9,8 @@ export default function VcPremium(props) {
   return (
     <>
       {props.item.stories_list[0] ? (
-          <div className="container">
         <div className="main-container">
+          <div className="container">
             <div className="vcpre-header">
               <div className="vc-pre-logo">
                 <p className="vcpre-headingone">VCCircle Premium</p>
@@ -69,12 +69,12 @@ export default function VcPremium(props) {
                   return (
                     <SwiperSlide>
                       <div className="vc-card">
-                        <div className="premium-container">
+                       
                           <Card
                             src={item.file_url}
+                            premium={item.premium}
                             imgSlug={item.slug}
                             imgCls="vc-pre-imgcls"
-                            width="100%"
                             title={item.title}
                             slug={item.slug}
                             slughead={item.industry_details[0].slug}
@@ -83,14 +83,11 @@ export default function VcPremium(props) {
                             author={item.author_details[0].name}
                             publish={item.publish}
                             sectionDetails="vc-details"
-                            imgVccls="vc-pre-img-div"
+                            imgVccls="vc-pre-img-div pos-card"
                             height="160px"
-                            cardDes="card-desc"
+                            cardDes="card-desc-pre"
                           />
-                          {item.premium === "1" ? (
-                            <Premium positionCls="vc-pre" />
-                          ) : null}
-                        </div>
+                          
                       </div>
                     </SwiperSlide>
                   );
@@ -102,7 +99,7 @@ export default function VcPremium(props) {
               <button className="vcpre-btn ">Subscribe</button>
             </div>
           </div>
-        </div>
+         </div>
       ) : null}
     </>
   );

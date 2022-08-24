@@ -52,12 +52,12 @@ export default function EditorSection(props) {
               {props.item.stories_list.map((item, index) => {
                 if (index === 0) return null;
                 return (
-                  <div className="premium-container">
-                    {console.log(item)}
+                  
                     <Card
                       src={item.file_url}
                       imgCls="imgCls"
                       imgSlug={item.slug}
+                      premium={item.premium}
                       flxCls="editor-flex"
                       slughead={item.industry_details[0].slug}
                       heading={item.industry_details[0].name}
@@ -67,19 +67,18 @@ export default function EditorSection(props) {
                       author={item.author_details[0].name}
                       publish={item.publish}
                       width="164px"
+                      imgVccls="pos-card"
                       sectionDetails="editor-sec-detail"
                       cardDes="card-desc"
                     />
-                    {item.premium === "1" ? (
-                      <Premium positionCls="editor-pre" />
-                    ) : null}
-                  </div>
+                   
+                  
                 );
               })}
             </div>
 
             <div className="res-sidead-none">
-              <div className="editor-section-three editor-width re-editor-sidead ">
+              <div className="editor-section-three editor-width re-editor-sidead editor-width-res ">
                 <p className="sidead-para">Advertisement</p>
                 <img
                   src="./Images/sidead.png"

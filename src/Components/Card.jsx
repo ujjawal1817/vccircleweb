@@ -1,6 +1,7 @@
 import React from "react";
 import moment from "moment";
 import { Link } from "react-router-dom";
+import Premium from "./Premium";
 
 export default function Card(props) {
   return (
@@ -15,6 +16,7 @@ export default function Card(props) {
               className={props.imgCls}
               height={props.height}
             />
+            {props.premium==="1"?<Premium positionCls="premium-text-editor"/>:null}
           </Link>
         </div>
         <div className={props.sectionDetails}>

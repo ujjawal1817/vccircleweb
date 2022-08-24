@@ -210,16 +210,16 @@
   }
 
   .resp-details-card {
-    padding: 7px 9px;
+    padding: 2px 9px;
   }
 
   /* .imgCls {
     width: 152px;
   } */
-  .premium-text-editor {
+  /* .premium-text-editor {
     bottom: 13px;
     left: 100px;
-  }
+  } */
 
   .cara-card {
     height: auto;
@@ -272,7 +272,9 @@
 
   .card-desc {
     font-size: 11px;
-  }
+    width: 100%;
+}
+  
 
   .premium-container {
     /* position: relative; */
@@ -850,11 +852,11 @@
 
 }
 
-@media (min-width: 320px) and (max-width: 1200px) {
+/* @media (min-width: 320px) and (max-width: 1200px) {
   .cara-container::before {
     display: none;
   }
-}
+} */
 
 @media (min-width: 600px) and (max-width: 768px) {
   side-ad {
@@ -1058,9 +1060,9 @@
     height: 114px;
   }
 
-  .premium-text-editor {
+  /* .premium-text-editor {
     left: 100px
-  }
+  } */
 
   .premium-title {
     font-size: 12px;
@@ -1140,6 +1142,7 @@
 }
 
 @media (min-width: 769px) and (max-width:992px) {
+
   .container {
     width: auto;
     padding: 0px 10px;
@@ -1184,11 +1187,11 @@
 
   }
 
-  .premium-text-editor {
+  /* .premium-text-editor {
 
     left: 201px;
 
-  }
+  } */
 
   .editor-section-desc {
     width: 100%;
@@ -1219,11 +1222,11 @@
     flex-wrap: wrap-reverse;
   }
 
-  .premium-text-editor {
+  /* .premium-text-editor {
 
-    left: 129px !important;
-    bottom: 107px;
-  }
+    left: 185px !important;
+    bottom: 124px;
+  } */
 
   .res-twitter {
     width: 100%;
@@ -1293,6 +1296,16 @@
 .tv-para {
   width: 100%;
 }
+.cara-pre {
+  position: absolute;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 1px 3px;
+  background-image: linear-gradient(90deg, #fe8c00, #f83600);
+  right: 31px;
+  bottom: 120px;
+}
 
 }
 
@@ -1341,11 +1354,18 @@
 
   }
 
-  .premium-text-editor {
+  /* .premium-text-editor {
 
     left: 201px;
 
-  }
+  } */
+  .card-desc {
+    font-size: 14px;
+    color: #222222;
+    width: 170px;
+    padding: 0px 0px;
+    font-size: 15px;
+}
 
   .editor-section-desc {
     width: 100%;
@@ -1363,6 +1383,18 @@
     display: block;
   }
 }
+
+@media (min-width:1000px) and (max-width:1200px){
+  .editor-section {
+    flex-wrap: wrap;
+}
+.editor-width {
+  width: 46.33%;
+}
+.editor-width-res{
+  width: 50%;
+}
+}
 @media (min-width:1081px) and (max-width:1366px){
   .container {
     width: auto;
@@ -1376,4 +1408,3 @@
   width: 100%;
 }
 }
-@media (min-width: 320px) and (max-width: 400px) {}

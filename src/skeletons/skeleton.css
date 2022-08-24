@@ -1,10 +1,14 @@
 .adskel {
-    height: 145px;
-    margin-top: 150px;
+    /* height: 145px; */
+    margin-top: 15px;
+    padding: 30px 40px;
     animation: skel-load 1s linear infinite alternate;
+    
     /* display: block; */
 }
-
+.adskel p{
+    color: transparent;
+}
 .section-detail {
     display: flex;
     margin-top: 20px;

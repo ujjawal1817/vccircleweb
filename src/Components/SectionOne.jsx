@@ -90,10 +90,12 @@ export default function SectionOne(props) {
               if (index === 0) return null;
               return (
                 <>
-                  <div className="premium-container">
+                  <div >
                     <Card
                       clsName="card-1"
                       imgCls="imgCls "
+                      premium={item.premium}
+                      imgVccls="pos-card resp-card-img "
                       imgSlug={item.slug}
                       src={item.file_url}
                       slughead={item.industry_details[0].slug}
@@ -108,13 +110,10 @@ export default function SectionOne(props) {
                       tooltipcls="tooltip"
                       publish={item.publish}
                       width="100%"
-                      imgVccls="resp-card-img "
                       flxCls="resp-div-card "
                       sectionDetails="resp-details-card "
                     />
-                    {item.premium === "1" ? (
-                      <Premium positionCls="premium-text-editor" />
-                    ) : null}
+                    
                     
                   </div>
                   

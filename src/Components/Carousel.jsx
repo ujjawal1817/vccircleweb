@@ -57,12 +57,13 @@ export default function Carousel(props) {
                     // if (index === 0) return null;
                     return (
                       <SwiperSlide>
-                        <div className="premium-container">
+                        
                           <Card
                             src={item.file_url}
+                            premium={item.premium}
                             imgSlug={item.slug}
                             imgCls="card-img-cls"
-                            width="100%"
+                            imgVccls="pos-card"
                             title={item.title}
                             slug={item.slug}
                             slugauth={item.author_details[0].slug}
@@ -74,10 +75,7 @@ export default function Carousel(props) {
                             flxCls="cara-card"
                             cardDes="card-desc"
                           />
-                          {item.premium === "1" ? (
-                            <Premium positionCls="cara-pre" />
-                          ) : null}
-                        </div>
+                          
                       </SwiperSlide>
                     );
                   })}

@@ -15,11 +15,13 @@ export default function MoreStories(props) {
                 // if(index===0)return null;
 
                 return (
-                  <div className="premium-container">
+                  
                     <Card
                       src={item.file_url}
+                      premium={item.premium}
                       imgSlug={item.slug}
                       imgCls="more-imgcls"
+                      imgVccls="pos-card"
                       slughead={item.industry_details[0].slug}
                       heading={item.industry_details[0].name}
                       slug={item.slug}
@@ -32,10 +34,7 @@ export default function MoreStories(props) {
                       cardDes="ms-para "
                       sectionDetails="more-padd"
                     />
-                    {item.premium === "1" ? (
-                      <Premium positionCls="more-pre" />
-                    ) : null}
-                  </div>
+                    
                 );
               })}
             </div>

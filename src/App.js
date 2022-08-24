@@ -30,27 +30,28 @@ function App() {
   }, []);
   return (
     <>
-  {/* <TopStoriesSkel/>  */}
+       {/* <TopStoriesSkel/>   */}
 
-          <Navbar />
+      <Navbar />
+      
       {!IsLoading ? <>
         <TopStoriesSkel />
 
       </>
         :
         <>
-
+          <Advertisement
+            src="./Images/advertisement.png"
+            pad={{ padding: "1rem 10rem" }}
+            width="100%"
+            advBg="advertisement-bg-top"
+          />
 
           {data.map((item) => {
             if (item.section_slug === "top-stories") {
               return (
                 <>
-                  <Advertisement
-                    src="./Images/advertisement.png"
-                    pad={{ padding: "1rem 10rem" }}
-                    width="100%"
-                    advBg="advertisement-bg-top "
-                  />
+
                   <SectionOne item={item} />
 
                   <Advertisement
@@ -170,7 +171,7 @@ function App() {
 
           <Footer />
         </>
-      }        
+      } 
     </>
   );
 }

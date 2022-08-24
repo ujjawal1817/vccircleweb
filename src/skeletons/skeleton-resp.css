@@ -156,3 +156,12 @@
         animation: skel-load 1s linear infinite alternate;
     }
 }
+
+@media (max-width:1200px){
+    .section-detail{
+        flex-direction: column-reverse;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
+}

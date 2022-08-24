@@ -8,7 +8,7 @@ export default function Advertisement(props) {
         <img
           style={props.pad}
           src={props.src}
-          alt="An advertising board"
+          alt=""
           width={props.width}
         />
       </div>
