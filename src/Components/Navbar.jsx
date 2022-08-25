@@ -20,7 +20,7 @@ export default function Navbar() {
     <>
      
           <div className="nav-shadow">
-            {/* <div className="container"> */}
+             <div className="container"> 
               <div className="nav-container">
                 <div className="navbar res-navbar">
                   <div className="hamburger-menu">
@@ -159,7 +159,7 @@ export default function Navbar() {
                   </ul>
                 </div>
               </div>
-            {/* </div> */}
+             </div> 
           </div>
         
     </>

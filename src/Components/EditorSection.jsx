@@ -12,7 +12,7 @@ export default function EditorSection(props) {
           <h2 className="editor-section-heading">{props.item.section_name}</h2>
           <div className="editor-section">
             <div className="editor-section-one editor-width ">
-              <div className="res-edit-head">
+              <div className="res-edit-head editor-image">
                 <Link to={props?.item.stories_list[0].slug||""}>
                 <img
                   src={props.item.stories_list[0].file_url}
@@ -35,17 +35,26 @@ export default function EditorSection(props) {
                   {props.item.stories_list[0].title}
                 </Link>
               </p>
-              <p className="editor-section-author">
-                <span>
+              <ul className="section-detail-author">
+                <li className="li-circle">
                   {moment(props.item.stories_list[0].publish).format(
                     "Do MMM YYYY"
-                  )}{" "}
-                  .{" "}
-                </span>
-                <Link to={props?.item.stories_list[0].author_details[0].slug||""} className="authcolr">
-                {props.item.stories_list[0].author_details[0].name}
-                </Link>
-              </p>
+                  )}
+                </li>
+                <li className="li-author">
+                {props.item.stories_list[0].author_details[0].slug ? (
+                  <Link
+                    to={
+                      props?.item.stories_list[0].author_details[0].slug || ""
+                    }
+
+                    className='authcolr'
+                  >
+                    {props.item.stories_list[0].author_details[0].name}
+                  </Link>
+                ) : null}
+                </li>
+              </ul>
             </div>
             {/* 3 Small Divs */}
             <div className="editor-width editor-border-right">
@@ -55,7 +64,7 @@ export default function EditorSection(props) {
                   
                     <Card
                       src={item.file_url}
-                      imgCls="imgCls"
+                      imgCls="imgCls-section-one "
                       imgSlug={item.slug}
                       premium={item.premium}
                       flxCls="editor-flex"

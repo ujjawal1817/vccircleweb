@@ -10,9 +10,9 @@ export default function SectionOne(props) {
     <>
       {props.item.stories_list[0] ? (
         <div className="container" key={props.item.stories_list[0].feid}>
-           <div className="section-one">
+          <div className="section-one">
             <div className="section-details">
-              <p className="section-detail-heading ">
+              <h2 className="section-detail-heading ">
                 {props.item.stories_list[0].industry_details[0].slug ? (
                   <Link
                     to={
@@ -23,8 +23,8 @@ export default function SectionOne(props) {
                     {props.item.stories_list[0].industry_details[0].name}
                   </Link>
                 ) : null}
-              </p>
-              <p className="section-detail-title">
+              </h2>
+              <h1 className="section-detail-title">
                 {props.item.stories_list[0].slug ? (
                   <Link
                     to={props?.item.stories_list[0].slug || ""}
@@ -33,17 +33,17 @@ export default function SectionOne(props) {
                     {props.item.stories_list[0].title}
                   </Link>
                 ) : null}
-              </p>
+              </h1>
               <p className="section-detail-desc">
                 {props.item.stories_list[0].summary}
               </p>
-              <p className="section-detail-author">
-                <span>
+              <ul className="section-detail-author">
+                <li className="li-circle">
                   {moment(props.item.stories_list[0].publish).format(
                     "Do MMM YYYY"
-                  )}{" "}
-                  .{" "}
-                </span>
+                  )}
+                </li>
+                <li className="li-author">
                 {props.item.stories_list[0].author_details[0].slug ? (
                   <Link
                     to={
@@ -55,25 +55,26 @@ export default function SectionOne(props) {
                     {props.item.stories_list[0].author_details[0].name}
                   </Link>
                 ) : null}
-              </p>
+                </li>
+              </ul>
               <button className="section-detail-button">Read More</button>
             </div>
 
             <div className="section-img " >
 
-            {props.item.stories_list[0].industry_details[0].slug ? (
-              <Link
-                to={props?.item.stories_list[0].industry_details[0].slug || ""}
-              >
-                <img
-                  src={props.item.stories_list[0].file_url}
-                  alt="section-im"
-                  className="section-sub-img skeleton"
-                />
-              </Link>
-            ) : null}
+              {props.item.stories_list[0].industry_details[0].slug ? (
+                <Link
+                  to={props?.item.stories_list[0].industry_details[0].slug || ""}
+                >
+                  <img
+                    src={props.item.stories_list[0].file_url}
+                    alt="section-im"
+                    className="section-sub-img skeleton"
+                  />
+                </Link>
+              ) : null}
             </div>
-            
+
           </div>
 
           <div className="editor-section-three editor-width re-editor-sidead res-editor-section-sidead">
@@ -83,7 +84,7 @@ export default function SectionOne(props) {
               alt=""
               className="side-ad res-sidead"
             />
-          </div> 
+          </div>
 
           <div className="section-two">
             {props.item.stories_list.map((item, index) => {
@@ -101,26 +102,26 @@ export default function SectionOne(props) {
                       slughead={item.industry_details[0].slug}
                       heading={item.industry_details[0].name}
                       slug={item.slug}
-                      cardDes="card-desc "
+                      cardDes="card-desc-section-one "
                       title={item.title}
                       slugauth={item.author_details[0].slug}
                       author={item.author_details[0].name}
-                      authorsecond={item.author_details.length>1?item.author_details[1].name:""}
-                      sname={item.author_details.length>1?"+1":""}
+                      authorsecond={item.author_details.length > 1 ? item.author_details[1].name : ""}
+                      sname={item.author_details.length > 1 ? "+1" : ""}
                       tooltipcls="tooltip"
                       publish={item.publish}
-                      width="100%"
+                      
                       flxCls="resp-div-card "
                       sectionDetails="resp-details-card "
                     />
-                    
-                    
+
+
                   </div>
-                  
+
                 </>
               );
             })}
-            
+
           </div>
         </div>
       ) : null}

@@ -50,6 +50,10 @@ export default function VcPremium(props) {
                     slidesPerView:3,
                     spaceBetween:40,
                   },
+                  1024:{
+                    slidesPerView:4,
+                    spaceBetween:40,
+                  },
                   414:{
                     slidesPerView:1,
                     spaceBetween:40,

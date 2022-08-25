@@ -3,9 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { FaAngleRight } from "react-icons/fa";
 import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from "swiper";
 
-import "swiper/css/bundle";
+// import "swiper/css/bundle";
 import Card from "./Card";
-import Premium from "./Premium";
+// import Premium from "./Premium";
 
 export default function Carousel(props) {
   
@@ -37,14 +37,14 @@ export default function Carousel(props) {
                   spaceBetween: 50,
                 },
                 1024: {
-                  slidesPerView: 4,
+                  slidesPerView: 4.3,
                   spaceBetween: 10,
                 },
               }}
               // install Swiper modules
               modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
               spaceBetween={10}
-              slidesPerView={4}
+              slidesPerView={4.3}
               navigation={true}
               pagination={{ clickable: true }}
               scrollbar={{ draggable: true }}

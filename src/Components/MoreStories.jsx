@@ -17,6 +17,7 @@ export default function MoreStories(props) {
                 return (
                   
                     <Card
+                    clsName="wi"
                       src={item.file_url}
                       premium={item.premium}
                       imgSlug={item.slug}

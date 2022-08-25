@@ -16,39 +16,42 @@ export default function Card(props) {
               className={props.imgCls}
               height={props.height}
             />
-            {props.premium==="1"?<Premium positionCls="premium-text-editor"/>:null}
+            {props.premium === "1" ? <Premium positionCls="premium-text-editor" /> : null}
           </Link>
         </div>
         <div className={props.sectionDetails}>
-          <p className="card-title">
+          <h3 className="card-title">
             <Link to={props?.slughead || "/"}>{props.heading}</Link>
-          </p>
+          </h3>
 
-          <p className={props.cardDes}>
+          <h4 className={props.cardDes}>
             <Link to={props?.slug || "/"} className="colr">
               {props.title}
             </Link>
-          </p>
-          
-          <ul className="author-flx">
-          <li className="card-author">
-            <span>{moment(props.publish).format("Do MMM YYYY")} . </span>
-            <Link to={props?.slugauth || "/"} className="authcolr">
-              <span>
-              {props.author}
-              </span>
+          </h4>
 
-            </Link>
-          </li>
-          <li >
-            <Link to={props?.slugauth || "/"} className={props.tooltipcls}>
-              <span>
-              {props.sname} </span>
-            <span className="tooltiptext">{props.authorsecond}</span>
-            </Link>
-          </li>
+          <ul className="author-flx">
+            <li className="li-circle">
+              {moment(props.publish).format("Do MMM YYYY")}
+
+            </li>
+            <li className="li-author">
+              <Link to={props?.slugauth || "/"} className="authcolr">
+
+                {props.author}
+
+
+              </Link>
+            </li>
+            <li >
+              <Link to={props?.slugauth || "/"} className={props.tooltipcls}>
+                <li>
+                  {props.sname} </li>
+                <span className="tooltiptext">{props.authorsecond}</span>
+              </Link>
+            </li>
           </ul>
-          
+
         </div>
       </div>
     </div>

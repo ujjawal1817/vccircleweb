@@ -33,15 +33,26 @@ export default function VccTv(props) {
                 </p>
                 <p className="tv-title"><Link to={props?.item.stories_list[0].slug||""} className="colr">{props.item.stories_list[0].title}</Link></p>
                 <p className="tv-para">{props.item.stories_list[0].summary}</p>
-                <p className="tv-author">
-                  <span>{moment(props.item.stories_list[0].publish).format(
+                <ul className="section-detail-author">
+                <li className="li-circle">
+                  {moment(props.item.stories_list[0].publish).format(
                     "Do MMM YYYY"
-                  )} . </span>
-                  <Link to={props?.item.stories_list[0].author_details[0].slug||""} className="authcolr">
+                  )}
+                </li>
+                <li className="li-author">
+                {props.item.stories_list[0].author_details[0].slug ? (
+                  <Link
+                    to={
+                      props?.item.stories_list[0].author_details[0].slug || ""
+                    }
 
-                  {props.item.stories_list[0].author_details[0].name}
+                    className='authcolr'
+                  >
+                    {props.item.stories_list[0].author_details[0].name}
                   </Link>
-                </p>
+                ) : null}
+                </li>
+              </ul>
               </div>
             </div>
           </div>
