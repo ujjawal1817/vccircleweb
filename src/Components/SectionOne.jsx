@@ -91,7 +91,7 @@ export default function SectionOne(props) {
               if (index === 0) return null;
               return (
                 <>
-                  <div >
+                  <div className="card-wrap">
                     <Card
                       clsName="card-1"
                       imgCls="imgCls "

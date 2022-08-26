@@ -18,6 +18,25 @@ export default function UpcomingEvents(props) {
       <div className="cara-container upcoming-container">
       <Swiper
             // install Swiper modules
+            breakpoints={{
+
+              998:{
+                slidesPerView:4,
+                spaceBetween:20,
+              },
+              769:{
+                slidesPerView:2,
+                spaceBetween:40,
+              },
+              1024:{
+                slidesPerView:4,
+                spaceBetween:40,
+              },
+              414:{
+                slidesPerView:1,
+                spaceBetween:40,
+              }
+            }}
             modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
             spaceBetween={10}
             slidesPerView={3}

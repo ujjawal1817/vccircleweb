@@ -139,15 +139,16 @@ a {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  height: 26px;
-  background-color: #eee;
+  height: 29px;
+  background-color: #fff;
   color: rgb(24, 22, 22);
   text-align: center;
-
-  padding: 5px 0;
+  padding: 8px 0;
   position: absolute;
   z-index: 1;
   bottom: 14px;
+  right: -8px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
 }
 
 .tooltip:hover .tooltiptext {
@@ -415,11 +416,11 @@ a {
 
 .section-detail-heading {
   font-size: 14px;
-    font-weight: 700;
+  font-weight: 700;
   margin-bottom: 10px;
-    line-height: 20px;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
+  line-height: 20px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
   color: #096ffa;
 }
 
@@ -439,33 +440,38 @@ a {
   line-height: 27px;
   margin-bottom: 14px;
 }
-.section-detail-author{
+
+.section-detail-author {
   display: flex;
 }
-.li-circle{
+
+.li-circle {
   color: #798692;
   font-size: 12px;
-  
+
   font-weight: 500;
-    position: relative;
-    display: flex;
+  position: relative;
+  display: flex;
 }
 
-.li-circle::after{
+.li-circle::after {
   content: "";
-    width: 6px;
-    height: 6px;
-    background: #b5b5b5;
-    
-    border-radius: 10px;
-    margin: 5px 8px;
+  width: 6px;
+  height: 6px;
+  background: #b5b5b5;
+
+  border-radius: 10px;
+  margin: 5px 8px;
 }
-.li-author{
+
+.li-author {
   color: #798692;
   font-size: 12px;
   font-weight: 500;
-    display: flex;
+  display: flex;
+  position: relative;
 }
+
 
 
 .section-sub-img {
@@ -496,9 +502,10 @@ a {
   display: inline-flex;
   gap: 15px;
   margin-top: 4rem;
-  
+
 }
-.wi{
+
+.wi {
   width: 50%;
 }
 
@@ -507,11 +514,12 @@ a {
   font-weight: 700;
   color: #096ffa;
   margin-bottom: 7px;
-    line-height: 12px;
-    letter-spacing: 1.2px;
+  line-height: 12px;
+  letter-spacing: 1.2px;
   /* margin-top: 1rem; */
 }
-.card-desc-section-one{
+
+.card-desc-section-one {
   font-size: 16px;
   font-weight: 500;
   color: #222222;
@@ -525,9 +533,10 @@ a {
   text-overflow: ellipsis;
   margin-bottom: 23px;
 }
+
 .card-desc {
   font-size: 14px;
-font-weight: 500;
+  font-weight: 500;
   color: #222222;
   width: 100%;
   display: -webkit-box;
@@ -551,13 +560,15 @@ font-weight: 500;
 .imgCls {
   border-radius: 10px;
   width: 100%;
-  
+
 }
+
 .imgCls-section-one {
   border-radius: 10px;
   width: 116px;
-    height: 90px
+  height: 90px
 }
+
 .card-img-cls {
   height: 150px;
   border-radius: 10px;
@@ -605,9 +616,13 @@ font-weight: 500;
   margin-top: 2rem;
 }
 
-/* .editor-width {
+.editor-width {
   width: 33.33%;
-} */
+}
+
+.editor-image {
+  width: 414px;
+}
 
 .editor-border-right {
   border-right: 0.1rem solid #e3e3e3;
@@ -752,7 +767,7 @@ font-weight: 500;
 
 .twitter-section {
   position: relative;
-  
+
 }
 
 .vcinvestment {
@@ -946,7 +961,7 @@ font-weight: 500;
 
 .vc-card {
   display: flex;
-  
+
 }
 
 .pre-swipe {
@@ -1043,6 +1058,7 @@ height: 30rem; */
   border-radius: 0.7rem;
   padding: 10px;
 }
+
 .up-details {
   padding: 0px 5px
 }
@@ -1129,7 +1145,7 @@ height: 30rem; */
   font-size: 2.4rem;
   color: #222222;
   font-weight: bold;
- 
+
   margin-top: 1rem;
 }
 
@@ -1137,7 +1153,7 @@ height: 30rem; */
   font-size: 1.6rem;
   font-weight: 400;
   color: #222222;
- 
+
   margin-top: 1rem;
   margin-bottom: 20px;
 }

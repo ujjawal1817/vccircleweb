@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
 
     .adskel {
         display: none;
@@ -10,7 +10,7 @@
 
     /* .sec-img{
         width: 100%;
-    } */
+    } 
     .skel-card-img {
         width: 480px;
     }
@@ -54,7 +54,7 @@
 
     /* .sub-sec-one{
         padding: 3px 5px ;
-    } */
+    } 
     .resp-card-detail {
         padding: 0px 3px;
     }
@@ -69,15 +69,15 @@
 
 }
 
+/*  */
 
 
-
-
+/* 
 @media (max-width: 768px) {
     /* .container {
         width: auto;
         margin: 0px 4px;
-    } */
+    } 
 
     .adskel {
         display: none;
@@ -94,7 +94,7 @@
 
     /* .img {
         width: 100%;
-    } */
+    } 
 
     .sub-sec-one {
         margin-top: 20px;
@@ -117,7 +117,7 @@
 
     /* .sub-sec-one{
         padding: 3px 5px ;
-    } */
+    } 
     .resp-card-detail {
         padding: 0px 3px;
     }
@@ -164,4 +164,4 @@
     .cards{
         flex-wrap: wrap;
     }
-}
+}  */

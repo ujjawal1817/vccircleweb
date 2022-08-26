@@ -15,6 +15,7 @@ import SectionOne from "./Components/SectionOne";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import TopStoriesSkel from "./skeletons/TopStoriesSkel";
+import UpcomingEventsResponsive from "./Components/UpcomingEventsResponsive";
 
 
 function App() {
@@ -100,6 +101,7 @@ function App() {
               return (
                 <>
                   <UpcomingEvents />
+                  <UpcomingEventsResponsive/>
                 </>
               );
             }

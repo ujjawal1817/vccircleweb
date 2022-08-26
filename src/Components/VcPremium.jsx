@@ -42,22 +42,22 @@ export default function VcPremium(props) {
                   //   spaceBetween: 50,
                   // },
 
-                  998:{
-                    slidesPerView:4,
-                    spaceBetween:20,
+                  340: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
                   },
-                  769:{
-                    slidesPerView:3,
-                    spaceBetween:40,
+                  540:{
+                    slidesPerView: 2,
+                    spaceBetween: 20,
                   },
-                  1024:{
-                    slidesPerView:4,
-                    spaceBetween:40,
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 50,
                   },
-                  414:{
-                    slidesPerView:1,
-                    spaceBetween:40,
-                  }
+                  1024: {
+                    slidesPerView: 4.3,
+                    spaceBetween: 10,
+                  },
                 }}
                 modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
                 spaceBetween={10}
