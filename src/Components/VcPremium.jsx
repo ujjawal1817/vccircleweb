@@ -42,12 +42,12 @@ export default function VcPremium(props) {
                   //   spaceBetween: 50,
                   // },
 
-                  340: {
-                    slidesPerView: 2,
+                  320: {
+                    slidesPerView: 1,
                     spaceBetween: 20,
                   },
                   540:{
-                    slidesPerView: 2,
+                    slidesPerView: 2.5,
                     spaceBetween: 20,
                   },
                   768: {

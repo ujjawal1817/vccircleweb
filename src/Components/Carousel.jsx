@@ -28,8 +28,8 @@ export default function Carousel(props) {
           <div className="cara-container">
             <Swiper
               breakpoints={{
-                340: {
-                  slidesPerView: 2,
+                320: {
+                  slidesPerView: 1,
                   spaceBetween: 20,
                 },
                 768: {

@@ -29,7 +29,7 @@ export default function UpcomingEvents(props) {
                 spaceBetween:40,
               },
               1024:{
-                slidesPerView:4,
+                slidesPerView:3,
                 spaceBetween:40,
               },
               414:{
@@ -39,7 +39,7 @@ export default function UpcomingEvents(props) {
             }}
             modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
             spaceBetween={10}
-            slidesPerView={3}
+            slidesPerView={4}
             navigation
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
