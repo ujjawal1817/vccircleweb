@@ -43,13 +43,13 @@ export default function Card(props) {
 
               </Link>
             </li>
-            <li >
-              <Link to={props?.slugauth || "/"} className={props.tooltipcls}>
-                <span>
-                  {props.sname} </span>
-                <span className="tooltiptext">{props.authorsecond}</span>
+            <li className={props.tooltipcls}>
+              <Link to={props?.slugauth || "/"} >
+
+                {props.sname}
               </Link>
             </li>
+            <li className="tooltiptext">{props.authorsecond}</li>
           </ul>
 
         </div>

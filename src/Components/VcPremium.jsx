@@ -46,7 +46,15 @@ export default function VcPremium(props) {
                     slidesPerView: 1,
                     spaceBetween: 20,
                   },
-                  540:{
+                  360:{
+                    slidesPerView:1.2,
+                    spaceBetween:20
+                  },
+                  400:{
+                    slidesPerView:1.5,
+                    spaceBetween:20
+                  },
+                  576:{
                     slidesPerView: 2.5,
                     spaceBetween: 20,
                   },
@@ -58,10 +66,14 @@ export default function VcPremium(props) {
                     slidesPerView: 4.3,
                     spaceBetween: 10,
                   },
+                  1200:{
+                    slidesPerView:4,
+                    spaceBetween:20
+                  }
                 }}
                 modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade]}
                 spaceBetween={10}
-                slidesPerView={4}
+                // slidesPerView={4}
                 navigation
                 pagination={{ clickable: true }}
                 scrollbar={{ draggable: true }}

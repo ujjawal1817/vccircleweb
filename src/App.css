@@ -136,8 +136,13 @@ a {
   position: relative
 }
 
-.tooltip .tooltiptext {
-  visibility: hidden;
+ .tooltiptext {
+  display: none;
+
+}
+
+.tooltip:hover+.tooltiptext {
+  display: block;
   width: 120px;
   height: 29px;
   background-color: #fff;
@@ -149,10 +154,6 @@ a {
   bottom: 14px;
   right: -8px;
   box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
 }
 
 .cara-pre {
@@ -1260,7 +1261,7 @@ height: 30rem; */
   font-size: 1.5rem;
   font-weight: 500;
   /* font-weight: bold; */
-  width: 29vw;
+  width: 100%;
   padding: 8px 0px;
 }
 
@@ -1396,6 +1397,13 @@ height: 30rem; */
   border-radius: 100%;
   color: white;
 }
+
+.swiper-button-disabled {
+  opacity: 0 !important;
+  cursor: auto !important;
+  pointer-events: none !important;
+}
+
 
 .swiper-slide .swiper-slide-active {
   width: 100% !important;

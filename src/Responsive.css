@@ -125,6 +125,11 @@
     color: #ffffffd8;
     font-weight: 400;
 }
+.up-para {
+  font-size: 11px;
+  width: 168px;
+  
+}
 
   .ms-para {
 
@@ -192,9 +197,9 @@
 .social-main {
   gap: 25px;
 }
-.infographic-section{
+/* .infographic-section{
   width: 100%;
-}
+} */
 .social-infographic-img {
   width: 100%;
 }
@@ -209,11 +214,6 @@
 .signup-main {
   padding: 30px 2px;
   flex-wrap: wrap;
-}
-.swiper-button-next, .swiper-rtl .swiper-button-prev {
-  right: 10px !important;
-  left: auto !important;
-  top: 54px !important;
 }
 }
 @media screen and (min-width: 576px) and (max-width:768px){
@@ -886,10 +886,13 @@ display: block;
   color: #333333;
 }
 .li-circle {
-  font-size: 10px;
+  font-size: 8px;
 }
 .li-author {
-  font-size: 10px;
+  font-size: 8px;
+}
+.li-circle::after {
+  margin: 2px 4px;
 }
 .signup-main {
   flex-wrap: wrap;
@@ -909,15 +912,23 @@ display: block;
   justify-content: center;
   flex-wrap: wrap
 }
+.vcinvestment{
+
+  width: 100%;
+}
 .infographic-section {
   margin-top: 20px;
 }
 .social-infographic-img {
   width: 100%;
 }
+.res-twitter{
+  width: 100%;
+}
 .up-events-none{
   display: none;
 }
+
 .res-upcomingevents{
 display: block;
 }
@@ -927,7 +938,7 @@ display: block;
 }
 .ms-para{
   width: 100%;
-  font-size: 13px;
+  font-size: 12px;
   padding: 3px 0px;
 }
 .tv-title {
