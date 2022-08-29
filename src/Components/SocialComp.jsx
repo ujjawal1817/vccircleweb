@@ -32,7 +32,7 @@ export default function SocialComp() {
           <img src="./Images/sidead.png" alt="" className="side-ad " />
         </div>
       </div>
-      <hr className="line-bottom" />
+    
     </div>
   );
 }

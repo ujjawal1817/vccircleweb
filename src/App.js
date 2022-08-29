@@ -61,6 +61,8 @@ function App() {
                     width="100%"
                     advBg="advertisement-bg"
                   />
+                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
+                 
                 </>
               );
             }
@@ -69,8 +71,11 @@ function App() {
               return (
                 <>
                   <EditorSection item={item} />
+                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
                   <Signup />
+                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
                   <SocialComp />
+                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
                 </>
               );
             }
@@ -79,6 +84,7 @@ function App() {
               return (
                 <>
                   <Carousel item={item} />
+                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
                   <Advertisement
                     src="./Images/advertisement.png"
                     pad={{ padding: "1rem 10rem" }}
@@ -93,6 +99,7 @@ function App() {
               return (
                 <>
                   <VcPremium item={item} />
+                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
                 </>
               );
             }
@@ -102,6 +109,7 @@ function App() {
                 <>
                   <UpcomingEvents />
                   <UpcomingEventsResponsive/>
+                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
                 </>
               );
             }
@@ -109,17 +117,24 @@ function App() {
               return (
                 <>
                   <Carousel item={item} />
+                 
                   <Advertisement
                     src="./Images/advertisement.png"
                     pad={{ padding: "1rem 10rem" }}
                     width="100%"
                     advBg="advertisement-bg"
                   />
+                   {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
                 </>
               );
             }
             if (item.section_slug === "most-popular") {
-              return <EditorSection item={item} />;
+              return (
+             <>
+              <EditorSection item={item} />
+              {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
+             </>
+              );
             }
             if (item.section_slug === "vcc-tv") {
               return (
@@ -132,11 +147,15 @@ function App() {
                     advBg="advertisement-bg"
 
                   />
+                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
                 </>
               );
             }
             if (item.section_slug === "tmt") {
-              return <Carousel item={item} />;
+              return 
+              (<><Carousel item={item} />
+              {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
+              </>);
             }
             if (item.section_slug === "financials") {
               return (
@@ -148,6 +167,7 @@ function App() {
                     width="100%"
                     advBg="advertisement-bg"
                   />
+                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
                 </>
               );
             }
@@ -156,6 +176,7 @@ function App() {
               return (
                 <>
                   <MoreStories item={item} />
+                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
                 </>
               );
             }
@@ -164,6 +185,7 @@ function App() {
               return (
                 <>
                   <Carousel item={item} />
+                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
                 </>
               );
             }

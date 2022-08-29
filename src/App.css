@@ -127,7 +127,9 @@ a {
   left: 8px;
   top: 6px;
 }
-
+.line-bottom{
+ background-color:  #e3e3e3;
+}
 .author-flx {
   display: flex;
 }
@@ -399,6 +401,7 @@ a {
   height: auto;
   background-color: #f0f0f0;
   margin-top: 50px;
+  margin-bottom: 20px;
 
 }
 

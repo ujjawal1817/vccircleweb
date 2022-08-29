@@ -566,6 +566,8 @@ display: block;
   .advertisement-bg{
     display: none;
   }
+ 
+  
   .res-container{
     max-width: 100% !important;
     padding: 0;
@@ -763,9 +765,18 @@ display: block;
 .resp-details-card{
   padding: 0px 7px;
 }
+.re-editor-sidead{
+  display: none;
+}
+.editor-section-three {
+  text-align: center;
+  margin-top: 28px;
+  margin-left: 0px;
+}
 
 .side-ad{
-  display: none;
+  display: block;
+  width: 100%;
 }
 .sidead-para{
   display: none;
