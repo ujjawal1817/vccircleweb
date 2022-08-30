@@ -27,20 +27,8 @@ export default function VcPremium(props) {
 
             <div className="cara-container vc-pre-shadow">
               <Swiper
-                // install Swiper modules
                 breakpoints={{
-                  // 340: {
-                  //   slidesPerView: 1,
-                  //   spaceBetween: 20,
-                  // },
-                  // 768: {
-                  //   slidesPerView: 2,
-                  //   spaceBetween: 50,
-                  // },
-                  // 1024: {
-                  //   slidesPerView: 4,
-                  //   spaceBetween: 50,
-                  // },
+                 
 
                   320: {
                     slidesPerView: 1,
