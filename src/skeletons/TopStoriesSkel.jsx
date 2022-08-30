@@ -6,13 +6,14 @@ import Advertisement from '../Components/Advertisement'
 
 export default function TopStoriesSkel() {
     return (
-        <div className='container'>
-            <Advertisement
+        <>
+        <Advertisement
                 
                 width="100%"
                 advBg="advertisement-bg-top adskel"
 
             />
+        <div className='container'>
             <div className='section-detail'>
                 <div className='sub-sec-one'>
                     <div className="heading"></div>
@@ -49,5 +50,6 @@ export default function TopStoriesSkel() {
 
             </div>
         </div>
+        </>
     )
 }

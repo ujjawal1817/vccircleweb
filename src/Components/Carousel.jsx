@@ -45,8 +45,12 @@ export default function Carousel(props) {
                   spaceBetween: 20,
                 },
                 768: {
-                  slidesPerView: 2,
+                  slidesPerView: 3,
                   spaceBetween: 50,
+                },
+                876:{
+                  slidesPerView:3.2,
+                  spaceBetween:10
                 },
                 1024: {
                   slidesPerView: 4.3,

@@ -570,7 +570,7 @@ display: block;
   
   .res-container{
     max-width: 100% !important;
-    padding: 0;
+    padding: 0 !important;
   }
   .nav-border {
     border-bottom: 1px solid #e3e3e3;
@@ -596,9 +596,9 @@ display: block;
     display: none;
   }
   .res-logo-img {
-    width: 20vw;
-    height: 32px;
-    margin: 9px 9px;
+    width: 25vw;
+    height: 29px;
+    margin: 2px 9px;
   }
 
   .nav-logo-vccircle {
@@ -623,7 +623,7 @@ display: block;
 
   .hamburger-menu {
     display: block;
-    font-size: 5rem;
+    font-size: 33px;
     display: flex;
     /* margin: 0px 14px; */
   }
@@ -667,7 +667,7 @@ display: block;
 
   .flt-right {
     float: right;
-    margin-top: 13px;
+    margin-top: 1px;
   }
 
   @keyframes fadeIn {
@@ -696,12 +696,12 @@ display: block;
 
   .sub-nav-li-hide {
     display: block;
-    padding: 16px 3px;
+    padding: 7px 3px;
     display: flex;
   }
 
   .para-sub {
-    font-size: 3.5vw;
+    font-size: 15px;
     padding: 0px 1px;
   }
 
@@ -731,7 +731,7 @@ display: block;
     margin-top: 102px;
 }
 .section-detail-title {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 29px;
   margin-bottom: 7px;
 }
@@ -773,7 +773,10 @@ display: block;
   margin-top: 28px;
   margin-left: 0px;
 }
-
+.editor-section-heading {
+  margin-top: 4rem;
+  font-size: 20px;
+}
 .side-ad{
   display: block;
   width: 100%;
@@ -795,6 +798,16 @@ display: block;
 }
 .editor-border-right {
   border-style: none;
+}
+.infographic-text-para {
+  font-size: 20px;
+}
+.carousel-heading-one {
+  font-size: 15px;
+}
+.carousel-heading-two {
+  font-size: 12px;
+  
 }
 .up-re-headers {
   display: flex;
@@ -909,11 +922,17 @@ display: block;
   flex-wrap: wrap;
   gap: 10px;
 }
+.signup-details {
+  text-align: center;
+}
 .tv-section{
   display: block;
 }
 .vcc_video {
    width: 100%
+}
+.vcpre-headingone {
+  font-size: 20px;
 }
 .tv-details {
    padding: 0px 0px; 
@@ -958,6 +977,12 @@ display: block;
 .tv-para {
   font-size: 15px;
 
+}
+.tv-heading-one {
+  font-size: 18px;
+}
+.tv-heading-two{
+  font-size: 12px;
 }
 .wi {
   width: 100%;
