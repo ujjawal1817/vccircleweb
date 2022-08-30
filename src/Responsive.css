@@ -110,7 +110,10 @@
     width: 114px;
     height: 97px;
   }
-
+  .vcinvestment {
+    left: 15px;
+    
+}
   .social-main {
 
     gap: 20px;
@@ -523,6 +526,14 @@
   justify-content: center;
   flex-wrap: wrap
 }
+.vcinvestment{
+  left: 5px;
+}
+.twitter-section {
+  position: relative;
+  border-style: none;
+   padding: 0px; 
+}
 .infographic-section {
   margin-top: 20px;
 }
@@ -898,14 +909,14 @@ display: block;
 }
 
 .card-text-desc {
-  font-size: 14px;
-  font-weight: 600;
-  color: #000000;
-  padding: 17px 0px;
+  font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+    padding: 6px 0px;
 }
 
 .card-text-author {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
   color: #333333;
 }
@@ -917,6 +928,9 @@ display: block;
 }
 .li-circle::after {
   margin: 2px 4px;
+}
+.tooltip {
+  top: 0px;
 }
 .signup-main {
   flex-wrap: wrap;
@@ -942,9 +956,16 @@ display: block;
   justify-content: center;
   flex-wrap: wrap
 }
-.vcinvestment{
-
+.vcinvestment {
+  bottom: 6px;
   width: 100%;
+  left: 1px;
+ 
+  
+}
+.twitter-section{
+  border-style: none;
+  padding: 0px;
 }
 .infographic-section {
   margin-top: 20px;

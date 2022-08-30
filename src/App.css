@@ -125,7 +125,7 @@ a {
   position: relative;
   display: inline-block;
   left: 8px;
-  top: 6px;
+  top: 3px;
 }
 .line-bottom{
  background-color:  #e3e3e3;
@@ -617,9 +617,11 @@ a {
 }
 
 .editor-section-one {
-  margin-top: 2rem;
+  margin-top: 10px;
 }
-
+.angle-right{
+  margin: -3px 0px;
+}
 .editor-width {
   width: 33.33%;
 }
@@ -771,16 +773,19 @@ a {
 
 .twitter-section {
   position: relative;
-
+  border-right: 1px solid #e3e3e3;
+    padding: 0px 10px;
 }
+
+
 
 .vcinvestment {
   position: absolute;
-  bottom: 1.5%;
+  bottom: 7px;
   padding: 1.5rem 0.5rem;
   width: 34rem;
   background-color: #f0f0f0;
-  left: 1.2%;
+  left: 15px;
   border-bottom-left-radius: 1.4rem;
   border-bottom-right-radius: 1.4rem;
 }
