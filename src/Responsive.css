@@ -291,8 +291,8 @@
   }
 
   .res-logo-img {
-    width: 20vw;
-    height: 32px;
+    width: 110px;
+    height: 26px;
     margin: 9px 9px;
   }
 
@@ -318,7 +318,7 @@
 
   .hamburger-menu {
     display: block;
-    font-size: 5rem;
+    font-size: 43px;
     display: flex;
     /* margin: 0px 14px; */
   }
@@ -390,13 +390,13 @@
 
   .sub-nav-li-hide {
     display: block;
-    padding: 16px 3px;
+    padding: 1px 3px;
     display: flex;
   }
 
   .para-sub {
-    font-size: 3.5vw;
-    padding: 0px 1px;
+    font-size: 20px;
+    padding: 3px 1px;
   }
 
   .hide-menu {
@@ -676,9 +676,9 @@
   }
 
   .res-logo-img {
-    width: 25vw;
-    height: 29px;
-    margin: 2px 9px;
+    width: 98px;
+    height: 28px;
+    margin: 2px 9px
   }
 
   .nav-logo-vccircle {
