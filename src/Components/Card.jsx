@@ -30,7 +30,7 @@ export default function Card(props) {
             </Link>
           </h4>
 
-          <ul className="author-flx">
+          <ul className={props.authFlex}>
             <li className="li-circle">
               {moment(props.publish).format("Do MMM YYYY")}
 

@@ -106,6 +106,7 @@ export default function SectionOne(props) {
                       title={item.title}
                       slugauth={item.author_details[0].slug}
                       author={item.author_details[0].name}
+                      authFlex="author-manu-flx"
                       authorsecond={item.author_details.length > 1 ? item.author_details[1].name : ""}
                       sname={item.author_details.length > 1 ? "+1" : ""}
                       tooltipcls="tooltip"

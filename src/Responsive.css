@@ -128,7 +128,13 @@
 
     margin-left: 0px;
   }
-
+  .card-content-height {
+    height: 82px;
+}
+.tooltip {
+  top: 3px;
+  left: 0px;
+}
   .signup-paraone {
     font-size: 14px;
     color: #ffffffd8;
@@ -218,6 +224,12 @@
     font-size: 12px;
     width: 100%;
     padding: 4px 0px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 23px;
   }
 
   .social-main {
@@ -228,7 +240,7 @@
   width: 100%;
 } */
   .social-infographic-img {
-    width: 100%;
+    width: auto;
   }
 
   .cara-card {
@@ -240,6 +252,10 @@
     height: 105px;
 
   }
+  .card-content-height{
+    height: 82px;
+  }
+  
 
   .signup-main {
     padding: 30px 2px;
@@ -879,7 +895,8 @@
 
   .card-desc-section-one {
     margin-bottom: 9px;
-    font-size: 15px;
+    font-size: 13px;
+    -webkit-line-clamp: 2;
   }
 
   .resp-details-card {
@@ -929,6 +946,14 @@
   .editor-border-right {
     border-style: none;
   }
+  .editor-section-desc {
+    margin-bottom: 6px;
+    
+}
+.editor-flex {
+  padding: 10px 0px;
+  
+}
 
   .infographic-text-para {
     font-size: 20px;
@@ -1170,7 +1195,9 @@
   .wi {
     width: 100%;
   }
-
+  .ms-main-heading {
+    font-size: 15px;
+  }
   .stes_flx {
     gap: 20px;
   }

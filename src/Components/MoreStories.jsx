@@ -29,6 +29,7 @@ export default function MoreStories(props) {
                       title={item.title}
                       slugauth={item.author_details[0].slug}
                       author={item.author_details[0].name}
+                      authFlex="author-flx"
                       publish={item.publish}
                       width="164px"
                       flxCls="more-story-flex"

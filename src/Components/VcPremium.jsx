@@ -85,6 +85,7 @@ export default function VcPremium(props) {
                             heading={item.industry_details[0].name}
                             slugauth={item.author_details[0].slug}
                             author={item.author_details[0].name}
+                            authFlex="author-flx"
                             publish={item.publish}
                             sectionDetails="vc-details"
                             imgVccls="vc-pre-img-div pos-card"

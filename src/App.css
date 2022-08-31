@@ -94,8 +94,8 @@ a {
   font-weight: bold;
   padding: 1px 3px;
   background-image: linear-gradient(90deg, #fe8c00, #f83600);
-  bottom: 22px;
-  right: 18px
+  bottom: 13px;
+  right: 3px
 }
 
 .editor-pre {
@@ -132,10 +132,14 @@ a {
   background-color: #e3e3e3;
 }
 
-.author-flx {
+.author-manu-flx {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+}
+.author-flx{
   display: flex;
 }
-
 .rep-card-img {
   position: relative
 }
@@ -358,9 +362,11 @@ a {
 .sub-ul-nav {
   display: flex;
 }
-
+.card-wrap{
+  position: relative;
+}
 .sub-nav-li {
-  padding: 2rem 2rem;
+  padding: 20px 13px;
   font-size: 1.4rem;
   color: #222222;
   font-weight: 500;
@@ -526,14 +532,13 @@ a {
 }
 
 .card-desc-section-one {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   color: #222222;
   line-height: 24px;
-  margin-bottom: 9px;
+  /* margin-bottom: 9px; */
   width: 100%;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -546,11 +551,11 @@ a {
   color: #222222;
   width: 100%;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 
 }
 
@@ -596,7 +601,7 @@ a {
   color: #222222;
   width: 100%;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  /* -webkit-line-clamp: 2; */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -671,6 +676,7 @@ a {
   display: flex;
   padding: 7px 0px;
   border-bottom: 1px solid #e3e3e3;
+  position: relative;
 }
 
 .editor-sec-detail {
@@ -938,8 +944,12 @@ a {
   border-radius: 10px;
   /* height: 250px; */
   /* width: 270px; */
+  position: relative;
 }
+/* .card-content-height{
+  height: 70px;
 
+} */
 .main-container {
   background-color: #000000;
   width: auto;
@@ -1005,6 +1015,7 @@ height: 30rem; */
   border-bottom-right-radius: 14px;
   width: 100%;
   padding: 20px 10px;
+  height: 126px
 }
 
 .vc-pre-span {
@@ -1186,7 +1197,7 @@ height: 30rem; */
   display: flex;
   background-color: #000000;
   align-items: center;
-  padding: 5rem 0rem;
+  padding: 10px 0px;
   justify-content: space-around;
   border-radius: 10px;
 }
@@ -1251,6 +1262,7 @@ height: 30rem; */
 
 .more-story-flex {
   display: flex;
+  position: relative;
 }
 
 .ms-sectionone {
@@ -1285,7 +1297,7 @@ height: 30rem; */
   font-weight: 500;
   /* font-weight: bold; */
   width: 100%;
-  padding: 8px 0px;
+  padding: 0px 0px;
 }
 
 .ms-sub-para {

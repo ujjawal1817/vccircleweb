@@ -80,10 +80,12 @@ export default function Carousel(props) {
                             imgSlug={item.slug}
                             imgCls="card-img-cls"
                             imgVccls="pos-card"
+                            sectionDetails="card-content-height"
                             title={item.title}
                             slug={item.slug}
                             slugauth={item.author_details[0].slug}
                             author={item.author_details[0].name}
+                            authFlex="author-flx"
                             authorsecond={item.author_details.length>1?item.author_details[1].name:""}
                             sname={item.author_details.length>1? "+1":""}
                             tooltipcls="tooltip"
