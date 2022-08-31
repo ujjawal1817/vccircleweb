@@ -94,11 +94,20 @@
     .heading {
         margin-top: 20px;
     }
+    .desc {
+      width: 283px;
+    }
     .skel-card-img {
-        width: 266px;
+      width: 151px
+    }
+    .img {
+      height: 323px;
     }
     .resp-card {
         display: flex;
+    }
+    .card-title-skel {
+      width: 133px
     }
     .cards {
         gap: 8px;
@@ -106,6 +115,12 @@
     }
     .card-heading {
         margin-top: 0px;
+    }
+    .card-date {
+      width: 75px
+    }
+    .card-author-name{
+      width: 75px
     }
     .resp-card-detail {
         padding: 3px 5px;
