@@ -827,6 +827,9 @@
   .section-detail-button {
     display: none;
   }
+  .section-detail-heading {
+    margin-top: 9px;
+}
 
   .section-two {
     gap: 0px;
