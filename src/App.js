@@ -152,10 +152,12 @@ function App() {
               );
             }
             if (item.section_slug === "tmt") {
-              return 
-              (<><Carousel item={item} />
+              return(
+              <>
+              <Carousel item={item} />
               {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
-              </>);
+              </>
+              );
             }
             if (item.section_slug === "financials") {
               return (

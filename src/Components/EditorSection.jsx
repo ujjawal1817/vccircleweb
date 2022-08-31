@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "./Card";
 import moment from "moment";
-import Premium from "./Premium";
 import {Link} from "react-router-dom";
 
 export default function EditorSection(props) {

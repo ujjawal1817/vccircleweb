@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from "swiper";
 import "swiper/css/bundle";
 import Card from "./Card";
-import Premium from "./Premium";
+
 
 export default function VcPremium(props) {
   return (

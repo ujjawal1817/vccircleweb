@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import Premium from "./Premium";
+
 
 export default function MoreStories(props) {
   return (
