@@ -127,9 +127,11 @@ a {
   left: 8px;
   top: 3px;
 }
-.line-bottom{
- background-color:  #e3e3e3;
+
+.line-bottom {
+  background-color: #e3e3e3;
 }
+
 .author-flx {
   display: flex;
 }
@@ -138,7 +140,7 @@ a {
   position: relative
 }
 
- .tooltiptext {
+.tooltiptext {
   display: none;
 
 }
@@ -619,9 +621,11 @@ a {
 .editor-section-one {
   margin-top: 10px;
 }
-.angle-right{
+
+.angle-right {
   margin: -3px 0px;
 }
+
 .editor-width {
   width: 33.33%;
 }
@@ -774,7 +778,7 @@ a {
 .twitter-section {
   position: relative;
   border-right: 1px solid #e3e3e3;
-    padding: 0px 10px;
+  padding: 0px 10px;
 }
 
 
@@ -1213,10 +1217,19 @@ height: 30rem; */
   width: 35rem;
   height: 5rem;
   background-color: #333333;
+  padding: 6px 10px;
+  font-size: 14px;
 }
 
 .signup-btnmain {
   text-align: center;
+  width: 100%;
+  max-width: 175px
+}
+
+.signup-field {
+  width: 100%;
+  max-width: 350px;
 }
 
 .signup-btn {
@@ -1225,6 +1238,8 @@ height: 30rem; */
   width: 15rem;
   height: 5rem;
   border-radius: 3rem;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .morestories-main {

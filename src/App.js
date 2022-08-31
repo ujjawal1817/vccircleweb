@@ -73,7 +73,7 @@ function App() {
                   <EditorSection item={item} />
                   {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
                   <Signup />
-                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
+                 
                   <SocialComp />
                   {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
                 </>

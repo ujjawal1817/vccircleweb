@@ -191,7 +191,7 @@
 
   .sub-nav-li {
     padding: 18px 8px;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .side-ad {
@@ -243,8 +243,20 @@
 
   .signup-main {
     padding: 30px 2px;
-    flex-wrap: wrap;
+    display: block;
+    text-align: center;
   }
+  .signup-field {
+    width: 100%;
+    max-width: 100%;
+    margin: 28px 0px
+}
+.signup-btnmain {
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
 }
 
 @media screen and (min-width: 576px) and (max-width:768px) {
@@ -584,6 +596,21 @@
   .vcinvestment {
     left: 5px;
   }
+  .signup-main {
+    padding: 30px 2px;
+    display: block;
+    text-align: center;
+  }
+  .signup-field {
+    width: 100%;
+    max-width: 100%;
+    margin: 28px 0px
+}
+.signup-btnmain {
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
 
   .twitter-section {
     position: relative;
@@ -1039,13 +1066,23 @@
   }
 
   .signup-main {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .signup-details {
+    padding: 30px 25px;
+    display: block;
     text-align: center;
   }
+  .signup-field {
+    width: 100%;
+    max-width: 100%;
+    margin: 28px 0px
+}
+.signup-btnmain {
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+.signup-btn{
+  width: 100%;
+}
 
   .tv-section {
     display: block;
