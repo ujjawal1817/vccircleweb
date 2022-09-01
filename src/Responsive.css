@@ -148,7 +148,8 @@
   }
 
   .ms-para {
-
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
     width: 100%;
   }
 }
@@ -215,11 +216,18 @@
   .editor-border-right {
     border-style: none;
   }
+  .premium-text-editor {
+    bottom: 24px;
+    right: 3px;
+}
 
   .more-imgcls {
     width: 154px;
   }
-
+  .tooltip {
+    left: 0px;
+    top: 3px;
+}
   .ms-para {
     font-size: 12px;
     width: 100%;
@@ -253,7 +261,7 @@
 
   }
   .card-content-height{
-    height: 82px;
+    height: 90px;
   }
   
 
@@ -895,9 +903,15 @@
 
   .card-desc-section-one {
     margin-bottom: 9px;
-    font-size: 13px;
+    font-size: 12px;
     -webkit-line-clamp: 2;
+    line-height: 20px;
   }
+  .author-manu-flx {
+    display: flex;
+    position: absolute;
+    bottom: 8px;
+}
 
   .resp-details-card {
     padding: 0px 7px;
@@ -954,7 +968,12 @@
   padding: 10px 0px;
   
 }
-
+.editor-section-one {
+  padding: 12px 0px;
+}
+.editor-section-one{
+  border-bottom: 1px solid #e3e3e3;
+}
   .infographic-text-para {
     font-size: 20px;
   }

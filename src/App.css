@@ -671,11 +671,17 @@ a {
   display: flex;
   padding: 1.5rem 0rem;
 }
+.prnt-div{
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.prnt-div:last-child{
+  border-bottom: none;
+}
 
 .editor-flex {
   display: flex;
   padding: 7px 0px;
-  border-bottom: 1px solid #e3e3e3;
   position: relative;
 }
 
@@ -1014,7 +1020,7 @@ height: 30rem; */
   border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
   width: 100%;
-  padding: 20px 10px;
+  padding: 14px 10px;
   height: 126px
 }
 
@@ -1297,7 +1303,7 @@ height: 30rem; */
   font-weight: 500;
   /* font-weight: bold; */
   width: 100%;
-  padding: 0px 0px;
+  padding: 7px 0px;
 }
 
 .ms-sub-para {

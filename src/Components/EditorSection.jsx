@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import moment from "moment";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function EditorSection(props) {
   return (
@@ -12,23 +12,23 @@ export default function EditorSection(props) {
           <div className="editor-section">
             <div className="editor-section-one editor-width ">
               <div className="res-edit-head editor-image">
-                <Link to={props?.item.stories_list[0].slug||""}>
-                <img
-                  src={props.item.stories_list[0].file_url}
-                  alt=""
-                  className="res-editor-head-img api-editor-img"
-                />
+                <Link to={props?.item.stories_list[0].slug || ""}>
+                  <img
+                    src={props.item.stories_list[0].file_url}
+                    alt=""
+                    className="res-editor-head-img api-editor-img"
+                  />
                 </Link>
               </div>
 
               <p className="editor-section-title">
-                <Link to={props?.item.stories_list[0].industry_details[0].slug||""}>
+                <Link to={props?.item.stories_list[0].industry_details[0].slug || ""}>
                   {props.item.stories_list[0].industry_details[0].name}
                 </Link>
               </p>
               <p className="editor-section-desc">
                 <Link
-                  to={props?.item.stories_list[0].slug||""}
+                  to={props?.item.stories_list[0].slug || ""}
                   className="api-slug-title"
                 >
                   {props.item.stories_list[0].title}
@@ -41,17 +41,17 @@ export default function EditorSection(props) {
                   )}
                 </li>
                 <li className="li-author">
-                {props.item.stories_list[0].author_details[0].slug ? (
-                  <Link
-                    to={
-                      props?.item.stories_list[0].author_details[0].slug || ""
-                    }
+                  {props.item.stories_list[0].author_details[0].slug ? (
+                    <Link
+                      to={
+                        props?.item.stories_list[0].author_details[0].slug || ""
+                      }
 
-                    className='authcolr'
-                  >
-                    {props.item.stories_list[0].author_details[0].name}
-                  </Link>
-                ) : null}
+                      className='authcolr'
+                    >
+                      {props.item.stories_list[0].author_details[0].name}
+                    </Link>
+                  ) : null}
                 </li>
               </ul>
             </div>
@@ -60,10 +60,13 @@ export default function EditorSection(props) {
               {props.item.stories_list.map((item, index) => {
                 if (index === 0) return null;
                 return (
-                  
+
+                  <>
+
                     <Card
                       src={item.file_url}
                       imgCls="imgCls-section-one "
+                      clsName="prnt-div"
                       imgSlug={item.slug}
                       premium={item.premium}
                       flxCls="editor-flex"
@@ -80,8 +83,10 @@ export default function EditorSection(props) {
                       sectionDetails="editor-sec-detail"
                       cardDes="card-desc"
                     />
-                   
-                  
+                    
+                  </>
+
+
                 );
               })}
             </div>
@@ -97,7 +102,7 @@ export default function EditorSection(props) {
               </div>
             </div>
           </div>
-          
+
         </div>
       ) : null}
     </>
