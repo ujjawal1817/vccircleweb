@@ -61,7 +61,7 @@ function App() {
                     width="100%"
                     advBg="advertisement-bg"
                   />
-                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
+                  {item.section_border==="1"?<div className="container"><p className="line-bottom"></p></div>:null}
                  
                 </>
               );
@@ -71,11 +71,11 @@ function App() {
               return (
                 <>
                   <EditorSection item={item} />
-                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
+                  {item.section_border==="1"?<div className="container"><p className="line-bottom"></p></div>:null}
                   <Signup />
                  
                   <SocialComp />
-                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
+                  {item.section_border==="1"?<div className="container"><p className="line-bottom"></p></div>:null}
                 </>
               );
             }
@@ -109,7 +109,6 @@ function App() {
                 <>
                   <UpcomingEvents />
                   <UpcomingEventsResponsive/>
-                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
                 </>
               );
             }

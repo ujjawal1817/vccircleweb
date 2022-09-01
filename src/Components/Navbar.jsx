@@ -22,10 +22,10 @@ export default function Navbar() {
       <div className="nav-shadow">
         <div className="container res-container">
           <div className="nav-container ">
-            <div className="navbar res-navbar">
+            <div className="navbar res-navbar container">
               <div className="hamburger-menu">
                 <div>
-                  <a href="/#" onClick={show}>
+                  <a href="/#" onClick={show} className="ham-menu">
                     <HiMenu />
                   </a>
                 </div>

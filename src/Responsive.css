@@ -315,6 +315,13 @@
     box-shadow: 0px 5px 10px #00000014;
     padding: 0px 0px
   }
+.ham-menu{
+  display: inline-block;
+    font-size: 25px;
+    padding-right: 15px;
+    color: black;
+    padding-top: 2px;
+}
 
   .close-btn {
     width: 56px;
@@ -327,9 +334,9 @@
   }
 
   .res-logo-img {
-    width: 110px;
+    width: 85px;
     height: 26px;
-    margin: 9px 9px;
+    margin: 0px 0px;
   }
 
   .nav-logo-vccircle {
@@ -342,6 +349,7 @@
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .res-nav-subscribe-ul {
@@ -353,10 +361,11 @@
   }
 
   .hamburger-menu {
-    display: block;
     font-size: 43px;
     display: flex;
-    /* margin: 0px 14px; */
+    /* padding: 4px 0px; */
+    width: 100%;
+    align-items: center;
   }
 
   .advertisement-bg-top {
@@ -372,8 +381,8 @@
   }
 
   .menu-nav-img {
-    padding: 0rem 0rem;
-    /* height: 1.9vh; */
+  width: auto;
+  height: auto;
   }
 
   .sub-nav {
@@ -412,14 +421,13 @@
 
   .sub-ul-nav {
     display: block;
-    height: 94vh;
     animation: fadeIn linear 1s forwards;
   }
 
   .sub-nav-li {
-    padding: 10px 50px;
+    padding: 13.3px 50px;
     margin-left: 0;
-    font-size: 15px;
+    font-size: 13px;
     color: #222222;
     font-weight: 600;
   }
@@ -431,8 +439,8 @@
   }
 
   .para-sub {
-    font-size: 20px;
-    padding: 3px 1px;
+    font-size: 14px;
+    /* padding: 11px 1px; */
   }
 
   .hide-menu {
@@ -441,7 +449,7 @@
 
   .sub-nav-li-hide-home {
     display: block;
-    font-size: 15px;
+    font-size: 13px;
     color: #222222;
     font-weight: 600;
   }
@@ -452,7 +460,7 @@
 
   .extra-menu {
     display: block;
-    font-size: 15px;
+    font-size: 13px;
     color: #222222;
     font-weight: 600;
   }
@@ -466,6 +474,7 @@
     gap: 0px;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 20px
   }
 
   .card-wrap {
@@ -704,6 +713,13 @@
   .nav-border {
     border-bottom: 1px solid #e3e3e3;
   }
+  .ham-menu{
+    display: inline-block;
+      font-size: 25px;
+      padding-right: 15px;
+      color: black;
+      padding-top: 2px;
+  }
 
   .nav-container {
     position: fixed;
@@ -729,7 +745,6 @@
   .res-logo-img {
     width: 98px;
     height: 28px;
-    margin: 2px 9px
   }
 
   .nav-logo-vccircle {
@@ -742,6 +757,7 @@
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .res-nav-subscribe-ul {
@@ -753,10 +769,11 @@
   }
 
   .hamburger-menu {
-    display: block;
     font-size: 33px;
     display: flex;
     /* margin: 0px 14px; */
+    width: 100%;
+    align-items: center;
   }
 
   .advertisement-bg-top {
@@ -785,7 +802,7 @@
     display: block;
     width: 96%;
     text-align: left;
-    top: 22%;
+    top: 16%;
     background-color: white;
     width: 100%;
   }
@@ -813,12 +830,11 @@
 
   .sub-ul-nav {
     display: block;
-    height: 94vh;
     animation: fadeIn linear 1s forwards;
   }
 
   .sub-nav-li {
-    padding: 10px 50px;
+    padding: 12px 50px;
     margin-left: 0;
     font-size: 15px;
     color: #222222;
@@ -860,7 +876,7 @@
 
   .section-one {
     flex-direction: column-reverse;
-    margin-top: 84px;
+    margin-top: 54px;
   }
 
   .section-detail-title {
@@ -900,7 +916,9 @@
   .resp-card-img {
     max-width: 166px;
   }
-
+.line-bottom{
+  display: none;
+}
   .card-desc-section-one {
     margin-bottom: 9px;
     font-size: 12px;

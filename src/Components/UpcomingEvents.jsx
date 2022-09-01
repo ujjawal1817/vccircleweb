@@ -74,7 +74,6 @@ export default function UpcomingEvents(props) {
 
         
       </div>
-      <hr/>
       </div>
     </div>
   );
