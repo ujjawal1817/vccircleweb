@@ -805,6 +805,7 @@
     top: 16%;
     background-color: white;
     width: 100%;
+    height: 100vh;
   }
 
   .txt_cntr {
@@ -831,6 +832,7 @@
   .sub-ul-nav {
     display: block;
     animation: fadeIn linear 1s forwards;
+    
   }
 
   .sub-nav-li {
