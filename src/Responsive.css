@@ -396,8 +396,7 @@
     top: 0%;
     background-color: white;
     width: 100%;
-    height: 100vh;
-    overflow: scroll;
+   
   }
 
   .txt_cntr {
@@ -424,6 +423,8 @@
   .sub-ul-nav {
     display: block;
     animation: fadeIn linear 1s forwards;
+    height: 100vh;
+    overflow: scroll;
   }
 
   .sub-nav-li {
@@ -807,8 +808,6 @@
     top: 0%;
     background-color: white;
     width: 100%;
-    height: 100vh;
-    overflow: scroll;
   }
 
   .txt_cntr {
@@ -836,6 +835,8 @@
   .sub-ul-nav {
     display: block;
     animation: fadeIn linear 1s forwards;
+    height: 100vh;
+    overflow: scroll;
     
   }
 
