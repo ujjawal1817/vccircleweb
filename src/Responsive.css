@@ -231,13 +231,13 @@
   .ms-para {
     font-size: 12px;
     width: 100%;
-    padding: 4px 0px;
+    padding: 2px 0px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-bottom: 23px;
+    margin-bottom: 13px;
   }
 
   .social-main {
@@ -1247,6 +1247,9 @@
   .stes_flx {
     gap: 20px;
   }
+  .footer-copyright {
+    margin-top: 35px;
+}
 
   .footer-ul-list {
 
