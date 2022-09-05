@@ -8,8 +8,8 @@ import Card from "./Card";
 // import Premium from "./Premium";
 
 export default function Carousel(props) {
-  
-  
+
+
   return (
     <>
       {props.item.stories_list[0] ? (
@@ -32,15 +32,15 @@ export default function Carousel(props) {
                   slidesPerView: 1,
                   spaceBetween: 20,
                 },
-                360:{
-                  slidesPerView:1.2,
-                  spaceBetween:20
+                360: {
+                  slidesPerView: 1.2,
+                  spaceBetween: 20
                 },
-                400:{
-                  slidesPerView:1.5,
-                  spaceBetween:20
+                400: {
+                  slidesPerView: 1.5,
+                  spaceBetween: 20
                 },
-                576:{
+                576: {
                   slidesPerView: 2.3,
                   spaceBetween: 20,
                 },
@@ -48,9 +48,9 @@ export default function Carousel(props) {
                   slidesPerView: 3,
                   spaceBetween: 50,
                 },
-                876:{
-                  slidesPerView:3.2,
-                  spaceBetween:10
+                876: {
+                  slidesPerView: 3.2,
+                  spaceBetween: 10
                 },
                 1024: {
                   slidesPerView: 4.3,
@@ -73,75 +73,33 @@ export default function Carousel(props) {
                     // if (index === 0) return null;
                     return (
                       <SwiperSlide>
-                        
-                          <Card
-                            src={item.file_url}
-                            premium={item.premium}
-                            imgSlug={item.slug}
-                            imgCls="card-img-cls"
-                            imgVccls="pos-card"
-                            sectionDetails="card-content-height"
-                            title={item.title}
-                            slug={item.slug}
-                            slugauth={item.author_details[0].slug}
-                            author={item.author_details[0].name}
-                            authFlex="author-flx"
-                            authorsecond={item.author_details.length>1?item.author_details[1].name:""}
-                            sname={item.author_details.length>1? "+1":""}
-                            tooltipcls="tooltip"
-                            publish={item.publish}
-                            flxCls="cara-card"
-                            cardDes="card-desc"
-                          />
-                          
+
+                        <Card
+                          src={item.file_url}
+                          premium={item.premium}
+                          imgSlug={item.slug}
+                          imgCls="card-img-cls"
+                          imgVccls="pos-card"
+                          sectionDetails="card-content-height"
+                          title={item.title}
+                          slug={item.slug}
+                          slugauth={item.author_details[0].slug}
+                          author={item.author_details[0].name}
+                          authFlex="author-flx"
+                          authorsecond={item.author_details.length > 1 ? item.author_details[1].name : ""}
+                          sname={item.author_details.length > 1 ? "+1" : ""}
+                          tooltipcls="tooltip"
+                          publish={item.publish}
+                          flxCls="cara-card"
+                          cardDes="card-desc"
+                        />
+
                       </SwiperSlide>
                     );
                   })}
                 </div>
 
-                {/* <div className="main-card-box ">
-                    <div className="card-images">
-                    <img src={props.item.stories_list[0].file_url} className="" alt="" />
 
-                      <span className="card-span-pre">PREMIUM</span>
-                    </div>
-                    <div className="card-details">
-                      
-                    
-                    <p className="card-para">{props.item.stories_list[1].title}</p>
-                    <p className="card-author">{props.item.stories_list[1].author_details[0].name}</p>
-                    </div>
-                  </div>
-
-
-                  <div className="main-card-box ">
-                    <div className="card-images">
-                    <img src={props.item.stories_list[0].file_url} className="" alt="" />
-
-                      <span className="card-span-pre">PREMIUM</span>
-                    </div>
-                    <div className="card-details">
-                      
-                    
-                    <p className="card-para">{props.item.stories_list[2].title}</p>
-                    <p className="card-author">{props.item.stories_list[2].author_details[0].name}</p>
-                    </div>
-                  </div>
-
-
-                  <div className="main-card-box ">
-                    <div className="card-images">
-                    <img src={props.item.stories_list[0].file_url} className="" alt="" /  >
-
-                      <span className="card-span-pre">PREMIUM</span>
-                    </div>
-                    <div className="card-details">
-                      
-                    
-                    <p className="card-para">{props.item.stories_list[3].title}</p>
-                    <p className="card-author">{props.item.stories_list[3].author_details[0].name}</p>
-                    </div>
-                  </div> */}
               </div>
             </Swiper>
           </div>
