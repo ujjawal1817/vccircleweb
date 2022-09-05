@@ -84,7 +84,9 @@ function App() {
               return (
                 <>
                   <Carousel item={item} />
-                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
+                  {item.section_border==="1"?<div className="container"><p className="line-bottom"></p></div>:null}
+                 
+                 
                   <Advertisement
                     src="./Images/advertisement.png"
                     pad={{ padding: "1rem 10rem" }}
@@ -99,7 +101,7 @@ function App() {
               return (
                 <>
                   <VcPremium item={item} />
-                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
+                  {item.section_border==="1"?<div className="container"><p className="line-bottom"></p></div>:null}
                 </>
               );
             }
@@ -123,7 +125,7 @@ function App() {
                     width="100%"
                     advBg="advertisement-bg"
                   />
-                   {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
+                   {item.section_border==="1"?<div className="container"><p className="line-bottom"></p></div>:null}
                 </>
               );
             }
@@ -131,7 +133,7 @@ function App() {
               return (
              <>
               <EditorSection item={item} />
-              {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
+              {item.section_border==="1"?<div className="container"><p className="line-bottom"></p></div>:null}
              </>
               );
             }
@@ -146,7 +148,7 @@ function App() {
                     advBg="advertisement-bg"
 
                   />
-                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
+                  {item.section_border==="1"?<div className="container"><p className="line-bottom"></p></div>:null}
                 </>
               );
             }
@@ -154,7 +156,7 @@ function App() {
               return(
               <>
               <Carousel item={item} />
-              {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
+              {item.section_border==="1"?<div className="container"><p className="line-bottom"></p></div>:null}
               </>
               );
             }
@@ -168,7 +170,7 @@ function App() {
                     width="100%"
                     advBg="advertisement-bg"
                   />
-                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
+                  {item.section_border==="1"?<div className="container"><p className="line-bottom"></p></div>:null}
                 </>
               );
             }
@@ -177,7 +179,7 @@ function App() {
               return (
                 <>
                   <MoreStories item={item} />
-                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
+                  {item.section_border==="1"?<div className="container"><p className="line-bottom"></p></div>:null}
                 </>
               );
             }
@@ -186,7 +188,7 @@ function App() {
               return (
                 <>
                   <Carousel item={item} />
-                  {item.section_border==="1"?<div className="container"><hr className="line-bottom"/></div>:null}
+                  {item.section_border==="1"?<div className="container"><p className="line-bottom"></p></div>:null}
                 </>
               );
             }

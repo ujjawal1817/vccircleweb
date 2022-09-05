@@ -423,7 +423,7 @@
   .sub-ul-nav {
     display: block;
     animation: fadeIn linear 1s forwards;
-    height: 100vh;
+    height: calc(100vh - 38px);
     overflow: scroll;
   }
 
