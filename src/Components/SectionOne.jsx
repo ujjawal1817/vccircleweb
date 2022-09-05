@@ -63,7 +63,7 @@ export default function SectionOne(props) {
 
               {props.item.stories_list[0].industry_details[0].slug ? (
                 <Link
-                  to={props?.item.stories_list[0].industry_details[0].slug || ""}
+                  to={props?.item.stories_list[0].slug || ""}
                 >
                   <img
                     src={props.item.stories_list[0].file_url}
